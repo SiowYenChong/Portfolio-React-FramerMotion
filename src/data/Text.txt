@@ -13,30 +13,53 @@ Fonts
 
 Skills
 ----------------------------------------------
-I love to create design which speaks, Keep it clean, minimal and simple.
-I LIKE TO DESIGN
-Web Design
-Mobile Apps
-TOOLS
-Figma
+Software Management and Development
+Cloud Engineering
+Data Analysis
+Machine Learning
+System Design
+Application Prototyping and Life Cycle Development
+Mobile Application Development - Android
+Backend System Development
 
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-SKILLS
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
+PROGRAMMING LANGUAGE
+Python (Numpy, Scikit, Matplotlib, Pandas, OpenCV)
+Java Object-Oriented, 
+C++, 
+PHP,
+Oracle SQL, 
+MySQL, 
+ReactJS, 
+Mobile (React Native), 
+Web Development technologies (HTML, CSS, PHP, JavaScript)
+Business Process Execution Language(BPEL), 
+Web Services Description Language (WSDL)
 
 TOOLS
-VScode, Github, Codepen etc.
+Linux shell scripting, 
+Git, 
+Microsoft Office, 
+Figma, 
+Microsoft SQL Server, 
+Glassfish, 
+OpenESB,
+Eclipse, 
+Postman, 
+SoapUI
 
 ----------------------------------------------
 
 About Text
 
 ----------------------------------------------
-I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-
-I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+I'm an upcoming Backend Software Engineer. 
+I am a fresh graduate in Software Engineering from UTAR. 
+I'm passionate about building innovative and useful software solutions and 
+continuously learning in the process. 
+As a programming enthusiast, I enjoy tackling challenging problems and leveraging 
+machine learning and reinforcement learning to enhance product and service performance. 
+Collaboration is important to me, 
+and I relish working with other engineers and researchers to achieve our goals
 ----------------------------------------------
 
 

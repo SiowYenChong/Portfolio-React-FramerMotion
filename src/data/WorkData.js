@@ -1,60 +1,37 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        name:"myGrocery React Native Application",
+        description:"Grocery Shopping Android App built with React Native, Javascript, Python, and Flask.",
+        tags:["Javascript","React Native","Python", "Flask"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        github:"https://github.com/SiowYenChong/myGrocery_React_Native_Application/tree/main"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        name:"Movie Ticket Booking website",
+        description:"Movie Booking website built with HTML, CSS, JS, AJAX and PHP.",
+        tags:["HTML","CSS", "JS", "AJAX", "PHP"],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
+        github:"https://github.com/SiowYenChong/Movie_Ticket_Booking_website"
         
     },
     {
         id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
+        name:"Car Rental System",
+        description:"Car Rental System built with Java Object Oriented, which allows renting, returning car.",
+        tags:["Java","Object Oriented"],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
+        github:"https://github.com/SiowYenChong/CarRentalSystem"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"Mentor-mentee event website",
+        description:"Website designed for IT Society October 2021's Mentor-Mentee, aims to help students in academic during the pandemic.",
+        tags:["HTML","CSS","Github Pages"],
         
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        github:"https://github.com/UTAR-ITS/mentor-mentee"
        
-    },{
-        id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
-        
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
-        
-    },
-    {
-        id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-        tags:["react","react-router","css"],
-        
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
-        
     },
     
   
