@@ -1,11 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Github, LinkedIn, Gmail } from '../components/AllSvgs';
+import { DarkTheme } from '../components/Theme';
 
 const Line = styled.span`
   width: 2px;
   height: 8rem;
-  background-color: ${props => props.theme.text};
+  background-color: ${props => props.color == 'dark' ? DarkTheme.text : DarkTheme.body};
 `;
 
 const Icons = styled.div`
@@ -30,21 +32,21 @@ const SocialIconLink = styled.a`
   color: inherit; /* Inherit text color from parent */
 `;
 
-function SocialIcons() {
+function SocialIcons(props) {
   return (
     <Icons>
       <SocialIconsContainer>
         <SocialIconLink target="_blank" href="https://github.com/SiowYenChong">
-          <Github width={25} height={25} fill="currentColor" />
+          <Github width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
         </SocialIconLink>
         <SocialIconLink target="_blank" href="https://www.linkedin.com/in/chong-siow-yen">
-          <LinkedIn width={25} height={25} fill="currentColor" />
+          <LinkedIn width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
         </SocialIconLink>
         <SocialIconLink target="_blank" href="mailto:Clairechong998@gmail.com">
-          <Gmail width={25} height={25} fill="currentColor" />
+          <Gmail width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
         </SocialIconLink>
       </SocialIconsContainer>
-      <Line />
+      <Line color = {props.theme} />
     </Icons>
   );
 }

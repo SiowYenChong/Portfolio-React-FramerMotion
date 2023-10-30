@@ -49,7 +49,7 @@ const BLOG = styled.a`
 `;
 
 const WORK = styled.a`
-  color: ${props => props.theme.text};
+  color: ${props => props.click ? props.theme.body: props.theme.text};
   position: absolute;
   top: 50%;
   left : calc(1rem + 2vw);
@@ -69,7 +69,7 @@ const BottomBar = styled.div`
 `;
 
 const ABOUT = styled.a`
-color: ${props => props.theme.text};
+color: ${props => props.click ? props.theme.body: props.theme.text};
 text-decoration: none;
 z-index: 1;
 `;
@@ -114,6 +114,18 @@ const Center = styled.button`
     }
 
 `
+const RedDiv = styled.div`
+    position: absolute;
+    top: 0;
+    background-color: #f03c33; 
+    bottom: 0;
+    right: 50%;
+    width: ${props => (props.click ? '50%' : '0%')};
+    height: ${props => (props.click ? '100%' : '0%')};
+    z-index: 1;
+    transition: height 0.5s ease, width 1s ease 0.5s;
+`;
+
 
 const Main = () => {
     const [click, setClick] = useState(false);
@@ -125,8 +137,9 @@ const Main = () => {
         <MainContainer>
         <Container>
             <PowerButton />
-            <LogoComponent />
-            <Sociallcons />
+            <LogoComponent theme = { click ? 'dark' : 'light'}/>
+            <Sociallcons theme = { click ? 'dark' : 'light'}/>
+            <RedDiv click = {click}/>
                 <Center click = {click}>
                     <Heart onClick={()=>handleClick()} width={click? 120: 200} height={click? 120: 200} fill='currentColor' />
                     <span>Click here</span>
@@ -140,11 +153,11 @@ const Main = () => {
             <BLOG href="/blog">
             <h2>Blog</h2>
             </BLOG>
-            <WORK href="/work">
+            <WORK href="/work" click = {click}>
             <h2>Work</h2>
             </WORK>
             <BottomBar>
-                <ABOUT href="/about">
+                <ABOUT href="/about" click = {click}>
                     <h2>About Me</h2>
                 </ABOUT>
                 <SKILLS href="/skills">
