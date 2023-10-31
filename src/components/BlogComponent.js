@@ -2,18 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-const Image = styled.div`
-    background-image: ${props => `url('${props.img}')`};
-    width: 100%;
-    height: 60%;
-    background-size: cover;
-    border: 1px solid transparent;
-    background-position: center center;
 
-    ${Box}.hover &{
-        border: 1px solid ${props => props.theme.body};
-    }
-`;
 
 const Box = styled(NavLink)`
     width: calc(10rem + 15vw);
@@ -38,6 +27,19 @@ const Box = styled(NavLink)`
 
 `;
 
+const Image = styled.div`
+    background-image: ${props => `url('${props.img}')`};
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    border: 1px solid transparent;
+    background-position: center center;
+
+    ${Box}:hover &{
+        border: 1px solid ${props => props.theme.body};
+    }
+`;
+
 const Title = styled.h3`
     color: inherit;
     padding: 0.5rem 0;
@@ -46,7 +48,7 @@ const Title = styled.h3`
     font-weight: 700;
     border-bottom: 1px solid ${props => props.theme.text};
 
-    ${Box}.hover &{
+    ${Box}:hover &{
         border-bottom: 1px solid ${props => props.theme.body};
     }
 `
