@@ -7,6 +7,7 @@ import Intro from './Intro';
 import { NavLink } from 'react-router-dom';
 import { Heart } from './AllSvgs';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const MainContainer = styled.div`
   background: ${props => props.theme.body};
@@ -42,7 +43,7 @@ const ContactLink = styled.a`
 const BLOG = styled.a`
   color: ${props => props.theme.text};
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: calc(1rem + 2vw);
   transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
@@ -52,7 +53,7 @@ const BLOG = styled.a`
 const WORK = styled.a`
   color: ${props => props.click ? props.theme.body: props.theme.text};
   position: absolute;
-  top: 50%;
+  top: 45%;
   left : calc(1rem + 2vw);
   transform: translate(-50%, -50%) rotate(-90deg) ;
   text-decoration: none;
@@ -150,20 +151,45 @@ const Main = () => {
             target="_blank"
             href="mailto:Clairechong998@gmail.com"
             >
-            <h2>Contact me or drop by!</h2>
+                <motion.h2
+                    whileHover = {{scale: 1.1}}
+                    whileTap = {{scale: 0.9}}
+                >
+                    Contact me or drop by!
+                </motion.h2>
             </Contact>
             <BLOG href="/blog">
-            <h2>Blog</h2>
+                <motion.h2
+                    whileHover = {{scale: 1.1}}
+                    whileTap = {{scale: 0.9}}
+                >
+                    Blog
+                </motion.h2>
             </BLOG>
             <WORK href="/work" click = {click}>
-            <h2>Work</h2>
+                <motion.h2
+                        whileHover = {{scale: 1.1}}
+                        whileTap = {{scale: 0.9}}
+                    >
+                    Work
+                </motion.h2>
             </WORK>
             <BottomBar>
                 <ABOUT href="/about" click = {click}>
-                    <h2>About Me</h2>
+                    <motion.h2
+                        whileHover = {{scale: 1.1}}
+                        whileTap = {{scale: 0.9}}
+                    >
+                        About me
+                    </motion.h2>
                 </ABOUT>
                 <SKILLS href="/skills">
-                    <h2>My Skills</h2>
+                    <motion.h2
+                            whileHover = {{scale: 1.1}}
+                            whileTap = {{scale: 0.9}}
+                    >
+                        My Skills
+                    </motion.h2>
                 </SKILLS>
             </BottomBar>
         </Container>
