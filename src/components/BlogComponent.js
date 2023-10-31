@@ -21,7 +21,7 @@ const Box = styled(NavLink)`
 
     &:hover {
         color: ${props => props.theme.body};
-        background-color: ${props => props.theme.text};
+        background-color: #ff8fab;
         transition: all 0.3s ease;
     }
 
@@ -39,7 +39,6 @@ const Image = styled.div`
         border: 1px solid ${props => props.theme.body};
     }
 `;
-
 const Title = styled.h3`
     color: inherit;
     padding: 0.5rem 0;
