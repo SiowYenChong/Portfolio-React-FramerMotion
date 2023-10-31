@@ -3,6 +3,7 @@ import styled, {keyframes} from 'styled-components';
 import PowerButton from '../subComponents/PowerButton';
 import LogoComponent from '../subComponents/LogoComponent';
 import Sociallcons from '../subComponents/Sociallcons';
+import Intro from './Intro';
 import { NavLink } from 'react-router-dom';
 import { Heart } from './AllSvgs';
 import { useState } from 'react';
@@ -117,7 +118,8 @@ const Center = styled.button`
 const RedDiv = styled.div`
     position: absolute;
     top: 0;
-    background-color: #f03c33; 
+    // background-color: #000000;
+    background-color: #ff8fab; 
     bottom: 0;
     right: 50%;
     width: ${props => (props.click ? '50%' : '0%')};
@@ -165,6 +167,7 @@ const Main = () => {
                 </SKILLS>
             </BottomBar>
         </Container>
+        {click ? <Intro click = {click}/>: null}
         </MainContainer>
     );
     };
