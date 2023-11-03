@@ -2,7 +2,8 @@ const particlesConfigLight = {
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#fbebd6"
+      // "value": "#fbebd6"
+      "value": "#fbdfd9"
     },
     "image": "url('https://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif')",
     "position": "0 50%",

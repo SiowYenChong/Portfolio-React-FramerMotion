@@ -2,12 +2,12 @@ const particlesConfig = {
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#043564"
+      "value": "#000000"
     },
-    "image": "url('https://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif')",
-    "position": "0 50%",
-    "repeat": "no-repeat",
-    "size": "60%",
+    "image": "",
+    "position": "",
+    "repeat": "",
+    "size": "",
     "opacity": 1
   },
   "backgroundMask": {
@@ -24,7 +24,7 @@ const particlesConfig = {
   "delay": 0,
   "fullScreen": {
     "enable": true,
-    "zIndex": 1
+    "zIndex": 0
   },
   "detectRetina": true,
   "duration": 0,
@@ -34,7 +34,7 @@ const particlesConfig = {
     "events": {
       "onClick": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "push"
       },
       "onDiv": {
         "selectors": [],
@@ -44,7 +44,7 @@ const particlesConfig = {
       },
       "onHover": {
         "enable": false,
-        "mode": "grab",
+        "mode": [],
         "parallax": {
           "enable": false,
           "force": 2,
@@ -74,11 +74,9 @@ const particlesConfig = {
         "distance": 200
       },
       "bubble": {
-        "distance": 400,
-        "duration": 2,
+        "distance": 200,
+        "duration": 0.4,
         "mix": false,
-        "opacity": 8,
-        "size": 40,
         "divs": {
           "distance": 200,
           "duration": 0.4,
@@ -94,7 +92,7 @@ const particlesConfig = {
         "radius": 60
       },
       "grab": {
-        "distance": 200,
+        "distance": 100,
         "links": {
           "blink": false,
           "consent": false,
@@ -103,7 +101,12 @@ const particlesConfig = {
       },
       "push": {
         "default": true,
-        "groups": [],
+        "groups": [
+          "z5000",
+          "z7500",
+          "z2500",
+          "z1000"
+        ],
         "quantity": 4
       },
       "remove": {
@@ -198,7 +201,7 @@ const particlesConfig = {
       }
     },
     "color": {
-      "value": "#ffffff",
+      "value": "#fff",
       "animation": {
         "h": {
           "count": 0,
@@ -229,18 +232,51 @@ const particlesConfig = {
         }
       }
     },
-    "groups": {},
+    "groups": {
+      "z5000": {
+        "number": {
+          "value": 70
+        },
+        "zIndex": {
+          "value": 50
+        }
+      },
+      "z7500": {
+        "number": {
+          "value": 30
+        },
+        "zIndex": {
+          "value": 75
+        }
+      },
+      "z2500": {
+        "number": {
+          "value": 50
+        },
+        "zIndex": {
+          "value": 25
+        }
+      },
+      "z1000": {
+        "number": {
+          "value": 40
+        },
+        "zIndex": {
+          "value": 10
+        }
+      }
+    },
     "move": {
       "angle": {
         "offset": 0,
-        "value": 90
+        "value": 10
       },
       "attract": {
         "distance": 200,
         "enable": false,
         "rotate": {
-          "x": 600,
-          "y": 1200
+          "x": 3000,
+          "y": 3000
         }
       },
       "center": {
@@ -251,7 +287,7 @@ const particlesConfig = {
       },
       "decay": 0,
       "distance": {},
-      "direction": "left",
+      "direction": "right",
       "drift": 0,
       "enable": true,
       "gravity": {
@@ -281,12 +317,12 @@ const particlesConfig = {
       },
       "random": false,
       "size": false,
-      "speed": 6,
+      "speed": 5,
       "spin": {
         "acceleration": 0,
         "enable": false
       },
-      "straight": true,
+      "straight": false,
       "trail": {
         "enable": false,
         "length": 10,
@@ -302,25 +338,24 @@ const particlesConfig = {
         "height": 1080
       },
       "limit": 0,
-      "value": 100
+      "value": 200
     },
     "opacity": {
       "random": {
         "enable": false,
         "minimumValue": 0.1
       },
-      "value": 0.5,
+      "value": 1,
       "animation": {
         "count": 0,
         "enable": false,
-        "speed": 1,
+        "speed": 2,
         "decay": 0,
         "delay": 0,
         "sync": false,
         "mode": "auto",
         "startValue": "random",
-        "destroy": "none",
-        "minimumValue": 0.1
+        "destroy": "none"
       }
     },
     "reduceDuplicates": false,
@@ -338,36 +373,25 @@ const particlesConfig = {
     "shape": {
       "close": true,
       "fill": true,
-      "options": {
-        "star": {
-          "sides": 5
-        },
-        "polygon": {
-          "sides": 5
-        }
-      },
-      "type": "star"
+      "options": {},
+      "type": "circle"
     },
     "size": {
       "random": {
-        "enable": true,
+        "enable": false,
         "minimumValue": 1
       },
-      "value": {
-        "min": 1,
-        "max": 4
-      },
+      "value": 3,
       "animation": {
         "count": 0,
         "enable": false,
-        "speed": 40,
+        "speed": 5,
         "decay": 0,
         "delay": 0,
         "sync": false,
         "mode": "auto",
         "startValue": "random",
-        "destroy": "none",
-        "minimumValue": 0.1
+        "destroy": "none"
       }
     },
     "stroke": {
@@ -378,8 +402,8 @@ const particlesConfig = {
         "enable": false,
         "minimumValue": 0
       },
-      "value": 0,
-      "opacityRate": 1,
+      "value": 5,
+      "opacityRate": 0.5,
       "sizeRate": 1,
       "velocityRate": 1
     },
@@ -514,13 +538,13 @@ const particlesConfig = {
     "links": {
       "blink": false,
       "color": {
-        "value": "#ffffff"
+        "value": "#fff"
       },
       "consent": false,
-      "distance": 150,
+      "distance": 100,
       "enable": false,
       "frequency": 1,
-      "opacity": 0.4,
+      "opacity": 1,
       "shadow": {
         "blur": 5,
         "color": {
@@ -555,6 +579,65 @@ const particlesConfig = {
   "style": {},
   "themes": [],
   "zLayers": 100,
+  "emitters": {
+    "autoPlay": true,
+    "fill": true,
+    "life": {
+      "wait": false
+    },
+    "rate": {
+      "quantity": 1,
+      "delay": 7
+    },
+    "shape": "square",
+    "startCount": 0,
+    "size": {
+      "mode": "percent",
+      "height": 0,
+      "width": 0
+    },
+    "particles": {
+      "shape": {
+        "type": "images",
+        "options": {
+          "images": {
+            "src": "https://particles.js.org/images/cyan_amongus.png",
+            "width": 500,
+            "height": 634
+          }
+        }
+      },
+      "size": {
+        "value": 40
+      },
+      "move": {
+        "speed": 10,
+        "outModes": {
+          "default": "none",
+          "right": "destroy"
+        },
+        "straight": true
+      },
+      "zIndex": {
+        "value": 0
+      },
+      "rotate": {
+        "value": {
+          "min": 0,
+          "max": 360
+        },
+        "animation": {
+          "enable": true,
+          "speed": 10,
+          "sync": true
+        }
+      }
+    },
+    "position": {
+      "x": -5,
+      "y": 55
+    }
+  },
   "motion": {
     "disable": false,
     "reduce": {
