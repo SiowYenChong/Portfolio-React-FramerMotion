@@ -26,6 +26,7 @@ const ParticleComponent = (props) => {
         id="tsparticles"
         init = {loadParticles}
         options={props.theme === 'light' ? configLight : configDark}
+        style = {{position: 'absolute', top: 0}}
       />
     </ParticleContainer>
   );
