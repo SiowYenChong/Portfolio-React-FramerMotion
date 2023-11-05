@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { ThemeProvider } from 'styled-components';
 import { LightTheme } from './components/Theme';
 import GlobalStyle from './globalStyles';
-
 import Main from './components/Main';
 import AboutPage from './components/AboutPage';
 import BlogPage from './components/BlogPage';
@@ -13,6 +12,7 @@ import MySkillsPage from './components/MySkillsPage';
 import { AnimatePresence } from 'framer-motion';
 import SoundBar from './subComponents/SoundBar';
 
+//test
 function App() {
   const location = useLocation();
   return (

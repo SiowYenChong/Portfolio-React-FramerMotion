@@ -3,8 +3,9 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Github, LinkedIn, Gmail } from '../components/AllSvgs';
 import { DarkTheme } from '../components/Theme';
+import { motion } from 'framer-motion';
 
-const Line = styled.span`
+const Line = styled(motion.span)`
   width: 2px;
   height: 8rem;
   background-color: ${props => props.color == 'dark' ? DarkTheme.text : DarkTheme.body};
@@ -46,7 +47,19 @@ function SocialIcons(props) {
           <Gmail width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
         </SocialIconLink>
       </SocialIconsContainer>
-      <Line color = {props.theme} />
+      <Line color = {props.theme} 
+        initial={{ 
+          height:0,
+        }}
+        animate={{
+          height: '8rem',
+        }}
+        transition={{
+          type: 'spring',
+          duration: 1,
+          delay: 0.8,
+        }}
+      />
     </Icons>
   );
 }

@@ -6,6 +6,7 @@ import App from './App';
 import { createRoot } from 'react-dom/client';
 //import '../node_modules/normalize.css';
 import { BrowserRouter } from 'react-router-dom';
+import SoundBar from './subComponents/SoundBar'; // Import SoundBar here
 
 ReactDOM.render(
   <React.StrictMode>
