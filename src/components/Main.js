@@ -25,9 +25,15 @@ const MainContainer = styled.div`
 const Container = styled.div`
   padding: 2rem;
 `;
+const Resume = styled.a`
+  background-color: #ff8fab;
+  color: ${props => props.theme.body};
+  padding: 10px 20px; // Add padding to create a button-like appearance
+  border: none; // Remove the border
+  border-radius: 5px;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 
-const Contact = styled.a`
-  color: ${props => props.theme.text};
+  cursor: pointer;
   position: absolute;
   top: 2rem;
   right: calc(1rem + 2vw);
@@ -35,9 +41,13 @@ const Contact = styled.a`
   z-index: 1;
 `;
 
-const ContactLink = styled.a`
+const Contact = styled.a`
   color: ${props => props.theme.text};
+  position: absolute;
+  top: 6rem;
+  right: calc(1rem + 2vw);
   text-decoration: none;
+  z-index: 1;
 `;
 
 const BLOG = styled.a`
@@ -114,6 +124,11 @@ const Center = styled.button`
         display: ${props => (props.click ? 'none' : 'inline-block')};
         padding-top: 1rem;
     }
+    span{
+        font-family: 'Karla', sans-serif;
+        font-size: calc(0.8em + 1vw);
+        font-weight: 500;
+    }
 
 `
 const RedDiv = styled.div`
@@ -147,6 +162,28 @@ const Main = () => {
                     <Heart onClick={()=>handleClick()} width={click? 120: 200} height={click? 120: 200} fill='currentColor' />
                     <span>Click here</span>
                 </Center>
+
+            <Resume
+            target="_blank"
+            href="https://drive.google.com/file/d/1296fS-8FiNRE3XWdZ77dGEWPU_5z6uUj/view?usp=sharing"
+            >
+            <motion.h2
+                initial={{
+                    y: -200,
+                    transition: { type: 'spring', duration: 1.5, delay: 1 },
+                }}
+                animate={{
+                    y: 0,
+                    transition: { type: 'spring', duration: 1.5, delay: 1 },
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+            >
+                View my resume
+                </motion.h2>
+            </Resume>
+
+
             <Contact
             target="_blank"
             href="mailto:Clairechong998@gmail.com"

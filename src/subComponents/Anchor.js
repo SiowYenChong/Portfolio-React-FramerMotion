@@ -40,12 +40,17 @@ const AnchorComponent = (props) => {
 
             let diff = Math.max(bodyHeight - (scrollPosition + windowSize));
             let diffP = (diff * 100) / (bodyHeight - windowSize);
-            ref.current.style.transform = `translateY(${-diffP}%)`;
+            
+            if (ref.current) {
+                ref.current.style.transform = `translateY(${-diffP}%)`;
+            }
 
-            if (window.pageYOffset > 5) {
-                hiddenRef.current.style.display = 'none'
-            } else {
-                hiddenRef.current.style.display = 'block'
+            if (hiddenRef.current) {
+                if (window.pageYOffset > 5) {
+                    hiddenRef.current.style.display = 'none';
+                } else {
+                    hiddenRef.current.style.display = 'block';
+                }
             }
         };
 
@@ -68,5 +73,6 @@ const AnchorComponent = (props) => {
         </Container>
     );
 };
+
 
 export default AnchorComponent;
