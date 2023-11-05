@@ -26,6 +26,14 @@ export const Work = [
     },
     {
         id:4,
+        name:"Portfolio React FramerMotion",
+        description:" My personal portfolio website, built using ReactJS and enhanced with framer-motion for stunning animations.",
+        tags:["ReactJS","Javascript","HTML","CSS"],
+        
+        github:"https://github.com/SiowYenChong/Portfolio-React-FramerMotion#my-portfolio-website-with-reactjs-styled-components-and-framer-motion-for-cool-animations"
+    },
+    {
+        id:5,
         name:"Mentor-mentee event website",
         description:"Website designed for IT Society October 2021's Mentor-Mentee, aims to help students in academic during the pandemic.",
         tags:["HTML","CSS","Github Pages"],
