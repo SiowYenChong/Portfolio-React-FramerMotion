@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
+import { Github } from '../components/AllSvgs'
 
 const Box = styled.li`
     width: 16rem;
@@ -67,6 +68,15 @@ const Link = styled(NavLink)`
 
     }
 `
+const Git = styled(NavLink)`
+    color: inherit;
+    text-decoration: none;
+    ${Box}:hover &{
+        &>*{
+            fill: #ff8fab;
+        }
+    }
+`
 
 const Card = (props) => {
 
@@ -86,10 +96,10 @@ const Card = (props) => {
             }
             </Tags>
             <Footer>
-                <Link to = {{pathname: `${demo}`}} target = '_blank'>
-                    Visit 
-                </Link>
-
+                <Link to={demo} target="_blank">Visit</Link>
+                <Git to={github} target="_blank">
+                    <Github width={30} height={30} />
+                </Git>
             </Footer>
         </Box>
     )

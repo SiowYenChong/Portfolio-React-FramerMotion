@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from './Theme';
 import styled from 'styled-components';
@@ -7,13 +7,15 @@ import SocialIcons from '../subComponents/Sociallcons';
 import PowerButton from '../subComponents/PowerButton';
 import { Work } from '../data/WorkData';
 import Card from '../subComponents/Card';
+import { Heart } from './AllSvgs';
+import BigTitle from '../subComponents/BigTitle';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
-    width: 100vw;
-    height: 100vh;
+    height: 400vh;
     position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
 `;
 const Main = styled.ul`
     position: fixed;
@@ -23,21 +25,49 @@ const Main = styled.ul`
     display: flex;
     color: #ff8fab;
 `
+const Rotate = styled.span`
+    display: block;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+`
 
 const WorkPage = () => {
+    const ref = useRef(null);
+    const heart = useRef(null);
+
+    useEffect(() => {
+        let element = ref.current;
+        if (element) {
+            const rotate = () => {
+                element.style.transform = `translateX(${-window.pageYOffset}px)`;
+                heart.current.style.transform = `rotate(` + -window.pageYOffset + `deg)`;
+            };
+            window.addEventListener('scroll', rotate);
+            return () => window.removeEventListener('scroll', rotate);
+        }
+    }, [ref]);
+
     return (
         <ThemeProvider theme={DarkTheme}>
             <Box>
                 <LogoComponent theme = 'dark'/>
                 <SocialIcons theme = 'dark'/>
                 <PowerButton/>
-                    <Main>
+                    <Main ref = {ref}>
                         {
                             Work.map(d =>
                                 <Card key = {d.id} data = {d}/>
                             )
                         }
                     </Main>
+                    <Rotate ref = {heart}>
+                        <Heart width = {80} height = {80} fill = {DarkTheme.text} />
+                    </Rotate>
+                    <BigTitle text = 'WORK' top = '10%' right = '20%'/>
             </Box>
         </ThemeProvider>
     );
