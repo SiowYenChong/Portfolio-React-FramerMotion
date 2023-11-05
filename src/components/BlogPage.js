@@ -10,6 +10,7 @@ import AnchorComponent from '../subComponents/Anchor';
 import { Anchor } from './AllSvgs';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import BigTitle from '../subComponents/BigTitle';
 
 const MainContainer = styled.div`
     background-image: url(${img});
@@ -63,6 +64,7 @@ const BlogPage = () => {
                             }
                         </Grid>
                     </Center>
+                    <BigTitle text = 'BLOG' top = '5rem' left = '5rem'/>
             </Container>
         </MainContainer>
     )

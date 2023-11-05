@@ -7,7 +7,7 @@ import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/Sociallcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
-
+import BigTitle from '../subComponents/BigTitle';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
@@ -72,6 +72,7 @@ const AboutPage = () => {
                     As a programming enthusiast, I enjoy tackling challenging problems and leveraging machine learning and reinforcement learning to enhance product and service performance. <br /><br />
                     Collaboration is important to me, and I relish working with other engineers and researchers to achieve our goals. <br /><br />
                 </Main>
+                <BigTitle text = 'ABOUT' top = '10%' left = '5%'/>
             </Box>
         </ThemeProvider>
     );
