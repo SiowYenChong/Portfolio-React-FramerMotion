@@ -25,26 +25,35 @@ const MainContainer = styled.div`
 const Container = styled.div`
   padding: 2rem;
 `;
-const Resume = styled.a`
-  background-color: #ff8fab;
-  color: ${props => props.theme.body};
-  padding: 10px 20px; // Add padding to create a button-like appearance
-  border: none; // Remove the border
-  border-radius: 5px;
-  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 
-  cursor: pointer;
+const ResumeContainer = styled.div`
   position: absolute;
   top: 2rem;
-  right: calc(1rem + 2vw);
-  text-decoration: none;
+  right: 2rem;
   z-index: 1;
+  display: inline-block;
+`;
+
+const ResumeButton = styled(motion.div)`
+  background-color: #ff8fab;
+  color: ${props => props.theme.body};
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+const ResumeText = styled.h2`
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: calc(0.3em + 1vw);
+  transition: color 0.3s; 
 `;
 
 const Contact = styled.a`
   color: ${props => props.theme.text};
   position: absolute;
-  top: 6rem;
+  top: 6.5rem;
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
@@ -162,27 +171,28 @@ const Main = () => {
                     <Heart onClick={()=>handleClick()} width={click? 120: 200} height={click? 120: 200} fill='currentColor' />
                     <span>Click here</span>
                 </Center>
-
-            <Resume
-            target="_blank"
-            href="https://drive.google.com/file/d/1296fS-8FiNRE3XWdZ77dGEWPU_5z6uUj/view?usp=sharing"
-            >
-            <motion.h2
-                initial={{
-                    y: -200,
-                    transition: { type: 'spring', duration: 1.5, delay: 1 },
-                }}
-                animate={{
-                    y: 0,
-                    transition: { type: 'spring', duration: 1.5, delay: 1 },
-                }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-            >
-                View my resume
-                </motion.h2>
-            </Resume>
-
+                <ResumeContainer>
+                    <motion.h2
+                        initial={{
+                        y: -200,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 },
+                        }}
+                        animate={{
+                        y: 0,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 },
+                        }}
+                    >
+                        <ResumeButton
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={() => {
+                            window.open("https://drive.google.com/file/d/1296fS-8FiNRE3XWdZ77dGEWPU_5z6uUj/view?usp=sharing", "_blank");
+                        }}
+                        >
+                        <ResumeText>View my resume</ResumeText>
+                        </ResumeButton>
+                    </motion.h2>
+                </ResumeContainer>
 
             <Contact
             target="_blank"
