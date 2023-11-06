@@ -169,7 +169,7 @@ const Main = () => {
             <RedDiv click = {click}/>
                 <Center click = {click}>
                     <Heart onClick={()=>handleClick()} width={click? 120: 200} height={click? 120: 200} fill='currentColor' />
-                    <span>Click here</span>
+                    <span>Click the heart </span>
                 </Center>
                 <ResumeContainer>
                     <motion.h2

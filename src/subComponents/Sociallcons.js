@@ -27,7 +27,7 @@ const SocialIconsContainer = styled.div`
   align-items: center;
 `;
 
-const SocialIconLink = styled.a`
+const SocialIconLink = styled(motion.a)`
   margin-bottom: 1rem; /* Add margin to create a gap between icons */
   text-decoration: none; /* Remove underline from links */
   color: inherit; /* Inherit text color from parent */
@@ -36,17 +36,35 @@ const SocialIconLink = styled.a`
 function SocialIcons(props) {
   return (
     <Icons>
-      <SocialIconsContainer>
-        <SocialIconLink target="_blank" href="https://github.com/SiowYenChong">
-          <Github width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
-        </SocialIconLink>
-        <SocialIconLink target="_blank" href="https://www.linkedin.com/in/chong-siow-yen">
-          <LinkedIn width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
-        </SocialIconLink>
-        <SocialIconLink target="_blank" href="mailto:Clairechong998@gmail.com">
-          <Gmail width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
-        </SocialIconLink>
-      </SocialIconsContainer>
+    <SocialIconsContainer>
+      <SocialIconLink
+        initial={{ scale: 1 }} // Start with a scale of 1
+        animate={{ scale: [0, 1, 1.5, 1] }} // Animation when mounted
+        transition={{ type: 'spring', duration: 1, delay: 1 }}
+        target="_blank"
+        href="https://github.com/SiowYenChong"
+      >
+        <Github width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
+      </SocialIconLink>
+      <SocialIconLink
+        initial={{  scale: 1 }} 
+        animate={{ scale: [0,1,1.5,1] }} 
+        transition={{ type:'spring', duration: 1, delay:1.4 }}
+        target="_blank"
+        href="https://www.linkedin.com/in/chong-siow-yen"
+      >
+        <LinkedIn width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
+      </SocialIconLink>
+      <SocialIconLink
+        initial={{ scale: 1 }} 
+        animate={{ scale: [0,1,1.5,1] }} 
+        transition={{ type:'spring', duration: 1, delay:1.6 }}
+        target="_blank"
+        href="mailto:Clairechong998@gmail.com"
+      >
+        <Gmail width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
+      </SocialIconLink>
+    </SocialIconsContainer>
       <Line color = {props.theme} 
         initial={{ 
           height:0,
