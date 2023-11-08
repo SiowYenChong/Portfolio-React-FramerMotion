@@ -69,13 +69,13 @@ const Form = styled.form`
     input{
         padding: 1rem calc(0.5rem + 1vw);
         margin-bottom: 1rem;
-        background-color: #ff8fab;
+        background-color: #ffdce4;
         border: none;
         border-radius: 4px;
         &:active, &:focus{
             border: none;
             outline: none;
-            background-color: #ff8fab;
+            background-color: #ffdce4;
         }
         &::placeholder{
             opacity: 0.8;
@@ -87,13 +87,13 @@ const Form = styled.form`
     textarea{
         padding: 1rem calc(0.5rem + 1vw);
         margin-bottom: 1rem;
-        background-color: #ff8fab;
+        background-color: #ffdce4;
         border: none;
         border-radius: 4px;
         &:active, &:focus{
             border: none;
             outline: none;
-            background-color: #ff8fab;
+            background-color: #ffdce4;
         }
         &::placeholder{
             opacity: 0.8;
@@ -155,6 +155,7 @@ const ContactPage = (props) => {
                                 <input type="text" name="name" placeholder="Your name" />
                                 <input type="email" name="email" placeholder="Your email" />
                             </Row>
+                            <input type="subject" name="subject" placeholder="Subject" />
                             <textarea name="message" placeholder="Your message" cols="30" rows="8"></textarea>
                             <div style = {{margin: "0 auto"}}>
                                 <button>Submit</button>
