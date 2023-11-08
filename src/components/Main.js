@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 import { Heart } from './AllSvgs';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import SoundBar from '../subComponents/SoundBar';
 
 const MainContainer = styled.div`
   background: ${props => props.theme.body};
@@ -163,6 +164,7 @@ const Main = () => {
     return (
         <MainContainer>
         <Container>
+            <SoundBar />
             <PowerButton />
             <LogoComponent theme = { click ? 'dark' : 'light'}/>
             <Sociallcons theme = { click ? 'dark' : 'light'}/>
