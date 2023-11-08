@@ -43,7 +43,7 @@ const Main = styled.div`
     z-index: 3;
     line-index: 1.5;
     display: flex;
-    justofy-content: center;
+    justify-content: center;
     align-items: center;
     font-size: calc(0.6rem + 1vw);
     backdrop-filter: blur(4px);

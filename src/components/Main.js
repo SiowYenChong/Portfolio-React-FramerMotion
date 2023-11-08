@@ -4,7 +4,6 @@ import PowerButton from '../subComponents/PowerButton';
 import LogoComponent from '../subComponents/LogoComponent';
 import Sociallcons from '../subComponents/Sociallcons';
 import Intro from './Intro';
-import { NavLink } from 'react-router-dom';
 import { Heart } from './AllSvgs';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -194,9 +193,7 @@ const Main = () => {
                     </motion.h2>
                 </ResumeContainer>
 
-            <Contact
-            target="_blank"
-            href="mailto:Clairechong998@gmail.com"
+            <Contact href="/contact"
             >
             <motion.h2
                 initial={{

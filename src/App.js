@@ -8,6 +8,7 @@ import AboutPage from './components/AboutPage';
 import BlogPage from './components/BlogPage';
 import WorkPage from './components/WorkPage';
 import MySkillsPage from './components/MySkillsPage';
+import ContactPage from './components/ContactPage';
 import { AnimatePresence, motion } from 'framer-motion';
 import SoundBar from './subComponents/SoundBar';
 
@@ -32,6 +33,7 @@ function App() {
               <Route path="blog" element={<BlogPage />} />
               <Route path="work" element={<WorkPage />} />
               <Route path="skills" element={<MySkillsPage />} />
+              <Route path="contact" element={<ContactPage />} />
             </Routes>
           </motion.div>
         </AnimatePresence>
