@@ -18,7 +18,7 @@ function App() {
     <>
       <GlobalStyle />
       <ThemeProvider theme={LightTheme}>
-
+        <SoundBar />
         <AnimatePresence>
           <motion.div
             key={location.pathname}
