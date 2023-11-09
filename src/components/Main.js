@@ -8,7 +8,6 @@ import { Heart } from './AllSvgs';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Modal, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const MainContainer = styled.div`
