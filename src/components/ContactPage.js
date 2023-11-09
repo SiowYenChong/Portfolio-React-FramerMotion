@@ -141,6 +141,7 @@ const ContactPage = (props) => {
       .then(
         (result) => {
           console.log(result.text);
+          alert('Thank you for reaching out! Will get back to you soon!');
         },
         (error) => {
           console.log(error.text);
