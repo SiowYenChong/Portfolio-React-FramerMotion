@@ -7,6 +7,9 @@ import Intro from './Intro';
 import { Heart } from './AllSvgs';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const MainContainer = styled.div`
   background: ${props => props.theme.body};
@@ -155,8 +158,18 @@ const RedDiv = styled.div`
 
 const Main = () => {
     const [click, setClick] = useState(false);
-    const handleClick = () => { 
-        setClick(!click) 
+    const [showModal, setShowModal] = useState(false);
+
+    const handleClick = () => {
+      setClick(!click);
+    };
+  
+    const openModal = () => {
+      setShowModal(true);
+    };
+  
+    const closeModal = () => {
+      setShowModal(false);
     };
 
     return (
@@ -170,28 +183,35 @@ const Main = () => {
                     <Heart onClick={()=>handleClick()} width={click? 120: 200} height={click? 120: 200} fill='currentColor' />
                     <span>Click the heart </span>
                 </Center>
+
                 <ResumeContainer>
-                    <motion.h2
-                        initial={{
-                        y: -200,
-                        transition: { type: 'spring', duration: 1.5, delay: 1 },
-                        }}
-                        animate={{
-                        y: 0,
-                        transition: { type: 'spring', duration: 1.5, delay: 1 },
-                        }}
+                    <ResumeButton
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={openModal}
                     >
-                        <ResumeButton
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={() => {
-                            window.open("https://drive.google.com/file/d/1296fS-8FiNRE3XWdZ77dGEWPU_5z6uUj/view?usp=sharing", "_blank");
-                        }}
-                        >
-                        <ResumeText>View my resume</ResumeText>
-                        </ResumeButton>
-                    </motion.h2>
+                    <ResumeText>View my resume</ResumeText>
+                    </ResumeButton>
                 </ResumeContainer>
+
+                <Modal show={showModal} onHide={closeModal} size="lg">
+                        <Modal.Header closeButton>
+                        <Modal.Title><h3>Resume</h3></Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                        <iframe
+                            title="Resume"
+                            src="https://drive.google.com/file/d/1296fS-8FiNRE3XWdZ77dGEWPU_5z6uUj/preview"
+                            width="100%"
+                            height="400px"
+                        />
+                        </Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="secondary" onClick={closeModal}>
+                            Close
+                        </Button>
+                        </Modal.Footer>
+                    </Modal>
 
             <Contact href="/contact"
             >
