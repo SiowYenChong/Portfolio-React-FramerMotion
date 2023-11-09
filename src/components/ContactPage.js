@@ -9,6 +9,8 @@ import CustomParticle from '../subComponents/CustomParticle';
 import BigTitle from '../subComponents/BigTitle';
 import { Github, LinkedIn, Gmail } from '../components/AllSvgs';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Box = styled.div`
   background-color: ${props => props.theme.body};
@@ -140,11 +142,19 @@ const ContactPage = (props) => {
       .sendForm('emailJS_9Nov', 'template_rvibaaa', formRef.current, '235kBciuzOsnSCVQD')
       .then(
         (result) => {
-          console.log(result.text);
-          alert('Thank you for reaching out! Will get back to you soon!');
+            console.log(result.text);
+            // Display a success toast notification
+            toast('Message successfully sent! Thank you for reaching out ❤', {
+              position: "top-right",
+              autoClose: 5000, // Close the notification after 5 seconds
+            });
         },
         (error) => {
           console.log(error.text);
+          toast.error('An error occurred while sending your message. Please try again later.', {
+            position: "top-right",
+            autoClose: 5000, // Close the notification after 5 seconds
+          });
         }
       );
     e.target.reset();
@@ -177,7 +187,8 @@ const ContactPage = (props) => {
             <input type="text" name="subject" placeholder="Subject" required />
             <textarea name="message" placeholder="Your message" cols="30" rows="8" required />
             <div style={{ margin: "0 auto" }}>
-              <button type="submit">Submit</button>
+              <button type="submit">Submit</button>                
+              <ToastContainer />
             </div>
           </Form>
         </ContactSection>
