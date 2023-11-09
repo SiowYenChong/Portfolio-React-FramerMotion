@@ -26,11 +26,12 @@ const Box = styled(motion.li)`
     }
 `
 const Title = styled.h2`
-    font-size: calc(1em + 0.5vw);
+    font-size: calc(0.8em + 0.5vw);
+    font-weight: 800;
 `
 
 const Description = styled.h2`
-    font-size: calc(0.8em + 0.3vw);
+    font-size: calc(0.6em + 0.3vw);
     font-family: 'Karla', sans-serif;
     font-weight: 500;
 `
@@ -48,7 +49,7 @@ const Tags = styled.div`
 
 const Tag = styled.span`
     margin-right: 1rem;
-    font-size: calc(0.8em + 0.3vw);
+    font-size: calc(0.6em + 0.3vw);
 `
 
 const Footer = styled.footer`
@@ -60,9 +61,9 @@ const Link = styled(NavLink)`
     background-color: ${props => props.theme.body};
     color: #ff8fab;
     text-decoration: none;
-    padding: 0.5rem calc(2rem + 2vw);
+    padding: 0.5rem calc(1.5rem + 2vw);
     border-radius: 0 0 0 50px;
-    font-size: calc(1em + 0.5vw);
+    font-size: calc(0.4em + 0.5vw);
     ${Box}:hover &{
         background-color: #ff8fab;
         color: ${props => props.theme.body};

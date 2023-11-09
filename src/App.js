@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { LightTheme } from './components/Theme';
@@ -19,7 +19,7 @@ function App() {
     <>
       <GlobalStyle />
       <ThemeProvider theme={LightTheme}>
-        <SoundBar />
+        
         <AnimatePresence>
           <motion.div
             key={location.pathname}
@@ -38,6 +38,7 @@ function App() {
           </motion.div>
         </AnimatePresence>
       </ThemeProvider>
+      <SoundBar />
     </>
   );
 }

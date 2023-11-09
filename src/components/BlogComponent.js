@@ -45,6 +45,7 @@ const Title = styled.h3`
     padding: 0.5rem 0;
     padding-top: 1rem;
     font-family: 'Karla', sans-serif;
+    font-size: calc(0.8em + 0.5vw);
     font-weight: 700;
     border-bottom: 1px solid ${props => props.theme.text};
 

@@ -6,7 +6,8 @@ const Logo = styled.h1`
     display: inline-block;
     color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
     font-family: 'Pacifico', cursive;
-
+    font-size: calc(1.2rem + 1vw);
+    font-weight: 550;
     position: fixed;
     left: 2rem;
     top: 2rem;

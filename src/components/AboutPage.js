@@ -26,7 +26,6 @@ const float = keyframes`
 const AmongUs = styled.div`
     position: absolute;
     bottom: 20%;
-    left: 3%;
     width: 40vw;
     animation: ${float} 4s ease infinite;
     img{
@@ -38,14 +37,14 @@ const Main = styled.div`
     border: 2px solid ${props => props.theme.text};
     color: ${props => props.theme.text};
     padding: 2rem;
-    width: 50vw;
-    height: 50vh;
+    width: 60vw;
+    height: 70vh;
     z-index: 3;
     line-index: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(0.6rem + 1vw);
+    font-size: calc(0.4rem + 1vw);
     backdrop-filter: blur(4px);
     position: absolute;
     right: calc(5rem + 5vw);

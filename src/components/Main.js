@@ -8,7 +8,7 @@ import { Heart } from './AllSvgs';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Modal, Button } from 'react-bootstrap';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainContainer = styled.div`
   background: ${props => props.theme.body};
@@ -47,7 +47,7 @@ const ResumeButton = styled(motion.div)`
 const ResumeText = styled.h2`
   font-family: 'Karla', sans-serif;
   font-weight: 500;
-  font-size: calc(0.3em + 1vw);
+  font-size: calc(0.4em + 1vw);
   transition: color 0.3s; 
 `;
 
@@ -184,25 +184,38 @@ const Main = () => {
                 </Center>
 
                 <ResumeContainer>
-                    <ResumeButton
+                    <motion.h2
+                    initial={{
+                        y: -200,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 },
+                    }}
+                    animate={{
+                        y: 0,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 },
+                    }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    onClick={openModal}
-                    >
-                    <ResumeText>View my resume</ResumeText>
-                    </ResumeButton>
+                >
+                        <ResumeButton
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={openModal}
+                        >
+                        <ResumeText>View my resume</ResumeText>
+                        </ResumeButton>
+                    </motion.h2>
                 </ResumeContainer>
 
                 <Modal show={showModal} onHide={closeModal} size="lg">
                         <Modal.Header closeButton>
-                        <Modal.Title><h3>Resume</h3></Modal.Title>
+                        <Modal.Title><h1>Resume</h1></Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                         <iframe
                             title="Resume"
                             src="https://drive.google.com/file/d/1296fS-8FiNRE3XWdZ77dGEWPU_5z6uUj/preview"
                             width="100%"
-                            height="400px"
+                            height="500px"
                         />
                         </Modal.Body>
                         <Modal.Footer>

@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { LightTheme } from './Theme';
 import styled from 'styled-components';
-import { Design, Develope } from './AllSvgs';
+import { Skills, Develope } from './AllSvgs';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/Sociallcons';
 import PowerButton from '../subComponents/PowerButton';
@@ -24,8 +24,8 @@ const Main = styled.div`
     color: ${props => props.theme.text};
     background-color: ${props => props.theme.body};
     padding: 2rem;
-    width: 30vw;
-    height: 60vh;
+    width: 35vw;
+    height: 70vh;
     z-index: 3;
     cursor: pointer;
     line-height: 1.5;
@@ -93,7 +93,7 @@ const MySkillsPage = () => {
                 <ParticleComponent theme = 'light'/>
                 <Main>
                     <Title>
-                        <Design width={40} height={40} /> &nbsp;Skills
+                        <Skills width={40} height={40} /> &nbsp;Skills
                     </Title>
                     <Description>
                         <strong>What I know: </strong>

@@ -45,8 +45,9 @@ const SubBox = styled.div`
 `
 
 const Text = styled.div`
-    font-size: calc(1em + 1.5vw);
+    font-size: calc(2em + 1.5vw);
     color: ${props => props.theme.body};
+    font-family: 'Pacifico';
     padding: 2rem;
     cursor: pointer;
     display: flex;
@@ -72,8 +73,8 @@ const Intro = () => {
         >
             <SubBox>
                 <Text>
-                    <h1>Hi,</h1>
-                    <h3>I'm Siow Yen</h3>
+                    Hi,
+                    <br /> I'm Siow Yen
                     <h6>I code and design
                     <br /> websites 
                     <br /> and apps</h6>
