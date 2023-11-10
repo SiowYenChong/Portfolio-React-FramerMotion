@@ -75,7 +75,7 @@ const CAREER = styled.a`
   color: ${props => props.theme.text};
   position: absolute;
   bottom: 20%;
-  right: calc(0rem + 2vw);
+  right: calc(1rem + 2vw);
   transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
   z-index: 1;
