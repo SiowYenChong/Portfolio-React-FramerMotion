@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/Sociallcons';
 import PowerButton from '../subComponents/PowerButton';
-import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitle';
 import './CareerPage.css';
 import { Study, Work } from './AllSvgs';
@@ -15,12 +14,13 @@ import 'react-vertical-timeline-component/style.min.css';
 import Button from 'react-bootstrap/Button';
 import CareerModal from '../subComponents/CareerModal';
 
+
 const PageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: ${props => props.theme.body};
+  background: linear-gradient(135deg, #7effbf, #a9ffad);
   overflow: hidden;
 `;
 
@@ -61,7 +61,7 @@ const CareerPage = () => {
           <LogoComponent theme="light" />
           <SocialIcons theme="light" />
           <PowerButton />
-          <VerticalTimeline lineColor = "#ffdce4">
+          <VerticalTimeline>
             {Career.map((element) => {
               let showButton =
                 element.buttonText !== undefined &&
@@ -91,7 +91,7 @@ const CareerPage = () => {
               );
             })}
           </VerticalTimeline>
-          <BigTitle text="CAREER" top="10%" right="5%" />
+          <BigTitle text="CAREER" top="10%" right="5%"/>
         </ContentContainer>
       </PageContainer>
       <CareerModal show={modalShow} onHide={handleModalHide} title={modalContent.title} content={modalContent.content} />
