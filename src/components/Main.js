@@ -11,7 +11,7 @@ import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainContainer = styled.div`
-  background: ${props => props.theme.body};
+  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
