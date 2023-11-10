@@ -17,9 +17,10 @@ const MainContainer = styled.div`
   overflow: hidden;
   position: relative;
 
-  h2, h2, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
     font-weight: 500;
+    font-size: calc(0.5em + 1vw);
   }
 `;
 
@@ -46,15 +47,15 @@ const ResumeButton = styled(motion.div)`
 
 const ResumeText = styled.h2`
   font-family: 'Karla', sans-serif;
-  font-weight: 500;
-  font-size: calc(0.4em + 1vw);
-  transition: color 0.3s; 
+  font-size: calc(0.5em + 0.7vw);
+  font-weight: 300;
+  transition: color 0.3s;
 `;
 
 const Contact = styled.a`
   color: ${props => props.theme.text};
   position: absolute;
-  top: 6.5rem;
+  top: 5.8rem;
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
@@ -63,8 +64,18 @@ const Contact = styled.a`
 const BLOG = styled.a`
   color: ${props => props.theme.text};
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: calc(1rem + 2vw);
+  transform: rotate(90deg) translate(-50%, -50%);
+  text-decoration: none;
+  z-index: 1;
+`;
+
+const CAREER = styled.a`
+  color: ${props => props.theme.text};
+  position: absolute;
+  bottom: 20%;
+  right: calc(0rem + 2vw);
   transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
   z-index: 1;
@@ -73,7 +84,7 @@ const BLOG = styled.a`
 const WORK = styled.a`
   color: ${props => props.click ? props.theme.body: props.theme.text};
   position: absolute;
-  top: 50%;
+  top: 40%;
   left : calc(1rem + 2vw);
   transform: translate(-50%, -50%) rotate(-90deg) ;
   text-decoration: none;
@@ -136,7 +147,7 @@ const Center = styled.button`
     }
     span{
         font-family: 'Karla', sans-serif;
-        font-size: calc(0.8em + 1vw);
+        font-size: calc(0.6em + 1vw);
         font-weight: 500;
     }
 
@@ -258,6 +269,22 @@ const Main = () => {
                     Blog
                 </motion.h2>
             </BLOG>
+            <CAREER href="/career">
+                <motion.h2
+                    initial={{
+                        y: -200,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 },
+                    }}
+                    animate={{
+                        y: 0,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 },
+                    }}
+                    whileHover = {{scale: 1.1}}
+                    whileTap = {{scale: 0.9}}
+                >
+                    Career
+                </motion.h2>
+            </CAREER>
             <WORK href="/work" click = {click}>
                 <motion.h2
                         initial={{

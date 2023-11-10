@@ -20,7 +20,7 @@ const Box = styled.div`
 `;
 const Main = styled(motion.ul)`
     position: fixed;
-    top: 12rem;
+    top: 10rem;
     left: calc(10rem + 15vw);
     height: 40vh;
     display: flex;

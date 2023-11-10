@@ -25,7 +25,7 @@ const float = keyframes`
 
 const AmongUs = styled.div`
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     width: 40vw;
     animation: ${float} 4s ease infinite;
     img{
@@ -47,8 +47,8 @@ const Main = styled.div`
     font-size: calc(0.4rem + 1vw);
     backdrop-filter: blur(4px);
     position: absolute;
-    right: calc(5rem + 5vw);
-    top: 10rem;
+    right: calc(3rem + 5vw);
+    top: 7rem;
     font-family: 'Ubuntu Mono', monospace;
     font-style: italic; 
 `

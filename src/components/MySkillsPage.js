@@ -14,6 +14,7 @@ const Box = styled.div`
     width: 100vw;
     height: 100vh;
     position: relative;
+    top: 2.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -24,7 +25,7 @@ const Main = styled.div`
     color: ${props => props.theme.text};
     background-color: ${props => props.theme.body};
     padding: 2rem;
-    width: 35vw;
+    width: 30vw;
     height: 70vh;
     z-index: 3;
     cursor: pointer;
@@ -108,50 +109,36 @@ const MySkillsPage = () => {
                             <li>Backend System Development</li>
                         </ul>
                     </Description>
-                    <Description>
-                        <strong>TOOLS: </strong>
-                        <div className="two-column-list">
-                            <div className="left-column">
-                                <ul>
-                                    <li>Linux shell scripting</li>
-                                    <li>Git</li>
-                                    <li>Microsoft Office</li>
-                                    <li>Figma</li>
-                                    <li>Microsoft SQL Server</li>
-                                </ul>
-                            </div>
-                            <div className="right-column">
-                                <ul>
-                                    <li>Glassfish</li>
-                                    <li>OpenESB</li>
-                                    <li>Eclipse</li>
-                                    <li>Postman</li>
-                                    <li>SoapUI</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Description>
                 </Main>
                 <Main>
                     <Title>
                         <Develope width={40} height={40} /> &nbsp;Programming Languages
                     </Title>
                     <Description>
-                        <ul>
                         <strong>What I know: </strong>
-                            <li>Python (Numpy, Scikit, Matplotlib, Pandas, OpenCV)</li>
-                            <li>Java (Object-Oriented)</li>
-                            <li>C++</li>
-                            <li>PHP</li>
-                            <li>Oracle SQL</li>
-                            <li>MySQL</li>
-                            <li>ReactJS</li>
-                            <li>Mobile (React Native)</li>
-                            <li>Web Development technologies (HTML, CSS, PHP, JavaScript)</li>
-                            <li>Business Process Execution Language (BPEL)</li>
-                            <li>Web Services Description Language (WSDL)</li>
-                        </ul>
+                            <div className="two-column-list">
+                                <div className="left-column">
+                                    <ul>
+                                        <li>Python (Numpy, Scikit, Matplotlib, Pandas, OpenCV)</li>
+                                        <li>Java (Object-Oriented)</li>
+                                        <li>C++</li>
+                                        <li>PHP</li>
+                                        <li>Oracle SQL</li>
+                                        <li>MySQL</li>
+                                    </ul>
+                                </div>
+                                <div className="right-column">
+                                    <ul>
+                                        <li>ReactJS</li>
+                                        <li>Mobile (React Native)</li>
+                                        <li>HTML, CSS, PHP, JavaScript</li>
+                                        <li>BPEL</li>
+                                        <li>WSDL</li>
+                                    </ul>
+                                </div>
+                            </div>
                     </Description>
+
                 </Main>
                 <BigTitle text = 'SKILLS' top = '80%' right = '30%'/>
             </Box>

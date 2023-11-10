@@ -39,7 +39,7 @@ const Title = styled.h1`
   margin-bottom: 3rem;
   position: absolute;
   right: calc(3rem + 5vw);
-  top: 10rem;
+  top: 6rem;
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 900;
   z-index: 3;
@@ -50,7 +50,7 @@ const Icons = styled.div`
   margin-bottom: 3rem;
   align-items: center;
   position: absolute;
-  top: 14rem;
+  top: 10rem;
   z-index: 3;
   a {
     &:not(:last-child) {
@@ -65,7 +65,7 @@ const Icons = styled.div`
 
 const Form = styled.form`
   position: absolute;
-  top: 20rem;
+  top: 15rem;
   z-index: 4;
   display: flex;
   flex-direction: column;
@@ -185,7 +185,7 @@ const ContactPage = (props) => {
               <input type="email" name="email" placeholder="Your email" required />
             </Row>
             <input type="text" name="subject" placeholder="Subject" required />
-            <textarea name="message" placeholder="Your message" cols="30" rows="8" required />
+            <textarea name="message" placeholder="Your message" cols="30" rows="2" required />
             <div style={{ margin: "0 auto" }}>
               <button type="submit">Submit</button>                
               <ToastContainer />
