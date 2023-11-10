@@ -185,7 +185,7 @@ const ContactPage = (props) => {
               <input type="email" name="email" placeholder="Your email" required />
             </Row>
             <input type="text" name="subject" placeholder="Subject" required />
-            <textarea name="message" placeholder="Your message" cols="30" rows="2" required />
+            <textarea name="message" placeholder="Your message" cols="30" rows="3" required />
             <div style={{ margin: "0 auto" }}>
               <button type="submit">Submit</button>                
               <ToastContainer />
