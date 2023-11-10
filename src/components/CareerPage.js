@@ -20,7 +20,7 @@ const PageContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(135deg, #7effbf, #a9ffad);
+  background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
   overflow: hidden;
 `;
 
