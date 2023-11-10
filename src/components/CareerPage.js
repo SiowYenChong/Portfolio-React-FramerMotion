@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { LightTheme } from './Theme';
 import styled from 'styled-components';
@@ -12,6 +12,8 @@ import { Study, Work } from './AllSvgs';
 import { Career } from '../data/CareerData';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import Button from 'react-bootstrap/Button';
+import CareerModal from '../subComponents/CareerModal';
 
 const PageContainer = styled.div`
   display: flex;
@@ -36,12 +38,21 @@ const SmallTimelineElement = styled(VerticalTimelineElement)`
   }
 `;
 
-const workStyle = { background: "#06D6A0" };
-const studyStyle = { background: "#f9c74f" };
+const workStyle = { background: "#C99EFD" };
+const studyStyle = { background: "#60AADB" };
 
 const CareerPage = () => {
-  let workStyle = { background: "#06D6A0" };
-  let studyStyle = { background: "#f9c74f" };
+    const [modalShow, setModalShow] = useState(false);
+    const [modalContent, setModalContent] = useState({ title: '', content: '' });
+  
+    const handleModalShow = (title, content) => {
+      setModalContent({ title, content });
+      setModalShow(true);
+    }
+  
+    const handleModalHide = () => {
+      setModalShow(false);
+    }
 
   return (
     <ThemeProvider theme={LightTheme}>
@@ -68,10 +79,14 @@ const CareerPage = () => {
                   <h5 className="vertical-timeline-element-subtitle">{element.location}</h5>
                   <p id="description">{element.description}</p>
                   {showButton && (
-                    <a className={`button ${element.icon === "Work" ? "workButton" : "studyButton"}`} href="/">
-                      {element.buttonText}
-                    </a>
-                  )}
+                        <Button
+                            className={`button ${element.icon === "Work" ? "workButton" : "studyButton"}`}
+                            variant="primary"
+                            onClick={() => handleModalShow(element.title, <iframe title="Document" src={element.link} width="100%" height="500px" />)}
+                        >
+                            {element.buttonText}
+                        </Button>
+                    )}
                 </SmallTimelineElement>
               );
             })}
@@ -79,6 +94,7 @@ const CareerPage = () => {
           <BigTitle text="CAREER" top="10%" right="5%" />
         </ContentContainer>
       </PageContainer>
+      <CareerModal show={modalShow} onHide={handleModalHide} title={modalContent.title} content={modalContent.content} />
     </ThemeProvider>
   );
 };

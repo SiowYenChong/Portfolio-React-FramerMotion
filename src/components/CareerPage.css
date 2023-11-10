@@ -26,19 +26,19 @@ h3{
 }
 
 .workButton{
-    background-color: #06d6a0;
+    background-color: #C99EFD;
 }
 
 .workButton:hover{
-    background-color: #0ac593;
+    background-color: #bb86fc;
 }
 
 .studyButton{
-    background-color: #f9c74f;
+    background-color: #60AADB;
 }
 
 .studyButton:hover{
-    background-color: #f3bc3c;
+    background-color: #3498db;
 }
 
 @media only screen and (max-width: 1700px) {

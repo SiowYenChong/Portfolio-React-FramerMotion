@@ -74,7 +74,7 @@ const BLOG = styled.a`
 const CAREER = styled.a`
   color: ${props => props.theme.text};
   position: absolute;
-  bottom: 20%;
+  bottom: 16%;
   right: calc(1rem + 2vw);
   transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
