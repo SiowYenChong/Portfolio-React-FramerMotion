@@ -1,9 +1,9 @@
 # My Portfolio Website with ReactJS, Styled-Components, and Framer Motion for Cool Animations
 
-This repository holds the code for my personal portfolio website, built using ReactJS. Please note that the website is a work in progress and is not currently ready. <br />
+This repository holds the code for my personal portfolio website, built using ReactJS. View Demo Link below. <br />
 
 Demo: <br />
-[link] <br />
+[[link](https://siowyenchong.vercel.app/)] <br />
 
 
 ## How to Use
