@@ -29,7 +29,7 @@ export const Work = [
         name:"Portfolio React FramerMotion",
         description:" My personal portfolio website, built using ReactJS and enhanced with framer-motion for stunning animations.",
         tags:["ReactJS","Javascript","HTML","CSS"],
-        demo: "https://github.com/SiowYenChong/Portfolio-React-FramerMotion#my-portfolio-website-with-reactjs-styled-components-and-framer-motion-for-cool-animations",
+        demo: "https://siowyenchong.vercel.app/",
         github:"https://github.com/SiowYenChong/Portfolio-React-FramerMotion#my-portfolio-website-with-reactjs-styled-components-and-framer-motion-for-cool-animations"
     },
     {

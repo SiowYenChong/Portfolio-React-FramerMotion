@@ -27,7 +27,7 @@ export const Blogs = [
     },
     {
         id:4,
-        name:"My last serving/AGM at UTAR IT Society Chairperson",
+        name:"My serving as UTAR IT Society Chairperson",
         tags:["Leadership","UTAR", "IT Society"],
         date:"9 July, 2022",
         imgSrc:"https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/292201727_2153939041447324_8579913064182737453_n.jpg?stp=dst-jpg_p960x960&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tlEfP0rGOvIAX-k4HSl&_nc_ht=scontent.fkul1-1.fna&oh=00_AfDAM5iuqrLawHS3dJBcXKyJ-OgxBTXWZChEoCfNEK3b1w&oe=65541579",
