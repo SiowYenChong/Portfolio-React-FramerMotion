@@ -118,7 +118,7 @@ const BottomBar = styled.div`
   display: flex;
   justify-content: space-evenly;
   @media (max-width: 768px) {
-    bottom: 3rem;
+    bottom: 4.5rem;
   }
 `;
 
