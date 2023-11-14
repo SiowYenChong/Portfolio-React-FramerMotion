@@ -117,12 +117,16 @@ const BottomBar = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 768px) {
+    bottom: 3rem;
+  }
 `;
 
 const ABOUT = styled.a`
 color: ${props => props.click ? props.theme.body: props.theme.text};
 text-decoration: none;
 z-index: 1;
+
 `;
 
 const SKILLS = styled.a`
