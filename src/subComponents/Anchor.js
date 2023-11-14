@@ -5,6 +5,7 @@ import { Anchor, Link } from '../components/AllSvgs';
 
 const Container = styled.div`
     position: relative;
+
 `;
 
 const Slider = styled.div`
@@ -20,12 +21,20 @@ const Slider = styled.div`
     .chain {
         transform: rotate(135deg);
     }
+    @media (max-width: 768px) {
+        top: 0;
+        right: 1rem;
+    }
 `;
 
 const PreDisplay = styled.div`
     position: absolute;
     top: 0;
     right: 2rem;
+    @media (max-width: 768px) {
+        top: 0;
+        right: 1rem;
+    }
 `;
 
 const AnchorComponent = (props) => {

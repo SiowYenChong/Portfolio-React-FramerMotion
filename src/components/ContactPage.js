@@ -119,6 +119,20 @@ const Form = styled.form`
       transform: scale(0.9);
     }
   }
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 2rem;
+    
+    align-items: center; // Add this line to center-align the form items
+    
+    input {
+      width: 100%; // Make the inputs full width
+    }
+    
+    textarea {
+      width: 100%; // Make the textarea full width
+    }
+  }
 `;
 
 const Row = styled.div``;

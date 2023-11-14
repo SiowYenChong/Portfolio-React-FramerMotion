@@ -17,6 +17,7 @@ const Box = styled.div`
     position: relative;
     display: flex;
     align-items: center;
+
 `;
 const Main = styled(motion.ul)`
     position: fixed;
@@ -25,6 +26,11 @@ const Main = styled(motion.ul)`
     height: 40vh;
     display: flex;
     color: #ff8fab;
+    @media (max-width: 768px) {
+        position: fixed;
+        top: 13rem;
+    }
+
 `
 const Rotate = styled.span`
     display: block;

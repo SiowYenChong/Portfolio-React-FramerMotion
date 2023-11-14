@@ -18,6 +18,13 @@ const Box = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 5rem;
+    top: 6.5rem;
+    left: calc(0.5rem + 2vw);
+  }
 `;
 
 const Main = styled.div`
@@ -39,6 +46,14 @@ const Main = styled.div`
         color: ${props => props.theme.body};
         background-color: #ff8fab;
     }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 60vw; /* Adjust the width for smaller screens */
+        height: 50vh; /* Adjust the height for smaller screens */
+        margin: 1rem; /* Add margin for spacing between boxes */
+
+    }
+
 `;
 
 const Title = styled.h2`
@@ -59,7 +74,7 @@ const Title = styled.h2`
 
 const Description = styled.div`
     color: ${props => props.theme.text};
-    font-size: calc(0.1em + 1vw);
+    font-size: calc(0.3em + 1vw);
     padding: 0.5rem;
     ${Main}:hover &{
         color:${props => props.theme.body};
@@ -74,13 +89,17 @@ const Description = styled.div`
     }
     .two-column-list {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
     
     .left-column,
     .right-column {
         flex: 1;
         padding: 0 10px;
+    }
+    @media (max-width: 768px) {
+        padding: 0.6rem;
+        font-size: 0.55rem;
     }
 `
 
@@ -138,7 +157,6 @@ const MySkillsPage = () => {
                                 </div>
                             </div>
                     </Description>
-
                 </Main>
                 <BigTitle text = 'SKILLS' top = '75%' right = '30%'/>
             </Box>

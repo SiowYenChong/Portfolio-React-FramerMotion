@@ -41,6 +41,10 @@ const SubBox = styled.div`
         transform: translate(-50%, 0%);
         width: 75%;
         height: auto;
+        @media (max-width: 768px) {
+            width: 100%;
+            height: auto;
+        }
     }
 `
 
@@ -58,10 +62,13 @@ const Text = styled.div`
         color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
         font-size: calc(0.5rem + 1.5vw);
         font-weight: 300;
+        @media (max-width: 768px) {
+            font-size: calc(0.8rem + 1.5vw);
+        }
     }
+    
+    
 `;
-
-
 
 
 const Intro = () => {

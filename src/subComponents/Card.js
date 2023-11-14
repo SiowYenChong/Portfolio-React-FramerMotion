@@ -24,16 +24,28 @@ const Box = styled(motion.li)`
         border: 1px solid #ff8fab;
 
     }
+    @media (max-width: 768px) {
+        height: 45vh;
+        width: 14rem;
+        margin-right: 6rem;
+    }
 `
 const Title = styled.h2`
     font-size: calc(0.8em + 0.5vw);
     font-weight: 800;
+    @media (max-width: 768px) {
+        font-size: calc(1.1em + 0.5vw);
+    }
 `
 
 const Description = styled.h2`
     font-size: calc(0.6em + 0.3vw);
     font-family: 'Karla', sans-serif;
     font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: calc(0.8em + 0.5vw);
+        padding: 0.1rem;
+    }
 `
 
 const Tags = styled.div`
@@ -50,6 +62,9 @@ const Tags = styled.div`
 const Tag = styled.span`
     margin-right: 1rem;
     font-size: calc(0.6em + 0.3vw);
+    @media (max-width: 768px) {
+        font-size: calc(0.65em + 0.5vw);
+    }
 `
 
 const Footer = styled.footer`
@@ -68,6 +83,9 @@ const Link = styled(NavLink)`
         background-color: #ff8fab;
         color: ${props => props.theme.body};
 
+    }
+    @media (max-width: 768px) {
+        font-size: calc(0.7em + 0.5vw);
     }
 `
 const Git = styled(NavLink)`

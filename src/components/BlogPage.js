@@ -38,6 +38,9 @@ const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
     grid-gap: calc(1rem + 2vw);
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 const container = {
     hidden: { opacity: 0 },
@@ -49,6 +52,7 @@ const container = {
         }
     }
 }
+
 
 
 const BlogPage = () => {

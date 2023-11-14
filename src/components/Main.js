@@ -20,6 +20,9 @@ const MainContainer = styled.div`
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     font-size: calc(0.5em + 1vw);
+    @media (max-width: 768px) {
+        font-size: calc(0.65em + 1vw);
+    }
   }
 `;
 
@@ -33,6 +36,11 @@ const ResumeContainer = styled.div`
   right: 2rem;
   z-index: 1;
   display: inline-block;
+
+  @media (max-width: 768px) {
+    top: 2rem;
+    right: 0.8rem;
+  }
 `;
 
 const ResumeButton = styled(motion.div)`
@@ -42,6 +50,9 @@ const ResumeButton = styled(motion.div)`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    padding: 5px 10px;
+  }
 `;
 
 const ResumeText = styled.h2`
@@ -58,6 +69,11 @@ const Contact = styled.a`
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    top: 4.6rem;
+    right: calc(0.5rem + 2vw);
+  }
 `;
 
 const BLOG = styled.a`
@@ -78,13 +94,16 @@ const CAREER = styled.a`
   transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
   z-index: 1;
+  @media (max-width: 768px) {
+    bottom: 26%;
+  }
 `;
 
 const WORK = styled.a`
   color: ${props => props.click ? props.theme.body: props.theme.text};
   position: absolute;
   top: 40%;
-  left : calc(1rem + 2vw);
+  left : calc(1.8rem + 2vw);
   transform: translate(-50%, -50%) rotate(-90deg) ;
   text-decoration: none;
   z-index: 1;
@@ -148,8 +167,10 @@ const Center = styled.button`
         font-family: 'Karla', sans-serif;
         font-size: calc(0.6em + 1vw);
         font-weight: 500;
+        @media (max-width: 768px) {
+            font-size: calc(0.8em + 1vw);
+        }
     }
-
 `
 const RedDiv = styled.div`
     position: absolute;

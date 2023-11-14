@@ -15,6 +15,7 @@ const Box = styled.div`
     height: 100vh;
     position: relative;
     overflow: hidden;
+    
 `;
 
 const float = keyframes`
@@ -31,6 +32,12 @@ const AmongUs = styled.div`
     img{
         width: 100%;
         height: auto;
+        @media (max-width: 768px) {
+            width: 200%;
+            position: absolute;
+            left: -50%;
+            bottom: 60%;
+        }
     }
 `;
 const Main = styled.div`
@@ -51,6 +58,11 @@ const Main = styled.div`
     top: 7rem;
     font-family: 'Ubuntu Mono', monospace;
     font-style: italic; 
+    @media (max-width: 768px) {
+        font-size: calc(0.55rem + 1vw);
+        width: 60vw;
+        height: 80vh;
+    }
 `
 
 const AboutPage = () => {

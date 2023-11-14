@@ -52,12 +52,20 @@ const Title = styled.h3`
     ${Box}:hover &{
         border-bottom: 1px solid ${props => props.theme.body};
     }
+
 `
 const HashTags = styled.div`
     padding: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+
 `
 const Tag = styled.span`
     padding-right: 0.5rem;
+    @media (max-width: 768px) {
+        font-size: calc(0.7em + 0.5vw);
+    }
+
 `
 const Date = styled.span`
     padding: 0.5rem 0;
