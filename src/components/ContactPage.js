@@ -121,7 +121,7 @@ const Form = styled.form`
   }
   @media (max-width: 768px) {
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
     
     align-items: center; // Add this line to center-align the form items
     

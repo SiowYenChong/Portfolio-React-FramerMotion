@@ -8,7 +8,7 @@ export const Career = [
         buttonText: "Intern Experience",
         date: "Oct 2022 - Jan 2023",
         icon: "Work",
-        link: "https://drive.google.com/uc?export=view&id=1wCup5yCYgPfyTuNuSzBELyNC1ftnZ7OK",
+        link: "https://drive.google.com/uc?export=pdfview&id=1wCup5yCYgPfyTuNuSzBELyNC1ftnZ7OK",
       },
       {
         id: 2,
@@ -19,7 +19,7 @@ export const Career = [
         buttonText: "View Abstract",
         date: "Apr 2022 - Dec 2022",
         icon: "Work",
-        link: "https://drive.google.com/uc?export=view&id=1UgRzZvJI2IBj0gPIKWCoC-eCASlRfLi5",
+        link: "https://drive.google.com/uc?export=pdfview&id=1UgRzZvJI2IBj0gPIKWCoC-eCASlRfLi5",
       },
       {
         id: 3,
@@ -29,7 +29,7 @@ export const Career = [
         buttonText: "View Academic Transcript",
         date: "Oct 2020 - Oct 2023",
         icon: "Study",
-        link: "https://drive.google.com/uc?export=view&id=1PhS8sTDAU7WMcwOUfyRc6LKRS3GcqjZC",
+        link: "https://drive.google.com/uc?export=pdfview&id=1PhS8sTDAU7WMcwOUfyRc6LKRS3GcqjZC",
       },
       {
         id: 4,
@@ -39,7 +39,7 @@ export const Career = [
         buttonText: "View Academic Transcript",
         date: "May 2018 - Oct 2020",
         icon: "Study",
-        link: "https://drive.google.com/uc?export=view&id=1NZh-DVfc75PM4_MsfXneXaxVGDpeSZM8",
+        link: "https://drive.google.com/uc?export=pdfview&id=1NZh-DVfc75PM4_MsfXneXaxVGDpeSZM8",
       },
       {
         id: 5,
@@ -49,6 +49,6 @@ export const Career = [
         buttonText: "View SPM Certificate",
         date: "Jan 2013 - Jan 2018", 
         icon: "Study",
-        link: "https://drive.google.com/uc?export=view&id=1uOr-X0erv-lXYkM4F6mgR_U4ggSgVsXG",
+        link: "https://drive.google.com/uc?export=pdfview&id=1uOr-X0erv-lXYkM4F6mgR_U4ggSgVsXG",
       },
 ]
