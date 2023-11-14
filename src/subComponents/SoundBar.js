@@ -45,8 +45,8 @@ const play = keyframes`
 `;
 
 const Line = styled.span`
-  background: ${(props) => props.theme.text};
-  border: 1px solid ${(props) => props.theme.body};
+  background: ${(props) => (props.theme === 'dark' ? props.theme.text : props.theme.body)};
+  border: 1px solid ${(props) => (props.theme === 'dark' ? props.theme.body : props.theme.text)};
   animation: ${play} 1s ease infinite;
   animation-play-state: ${(props) => (props.isPlaying ? 'running' : 'paused')};
   height: 1rem;
@@ -92,6 +92,7 @@ const SoundBar = () => {
   }, [isPlaying]);
 
   return (
+    
     <Box onClick={togglePlayback}>
       <Line isPlaying={isPlaying} />
       <Line isPlaying={isPlaying} />
