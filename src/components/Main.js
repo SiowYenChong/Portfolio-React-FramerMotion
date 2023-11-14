@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import styled, {keyframes} from 'styled-components';
 import PowerButton from '../subComponents/PowerButton';
 import LogoComponent from '../subComponents/LogoComponent';
 import Sociallcons from '../subComponents/Sociallcons';
 import Intro from './Intro';
 import { Heart } from './AllSvgs';
-import { useState } from 'react';
+
 import { motion } from 'framer-motion';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const MainContainer = styled.div`
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   width: 100vw;
