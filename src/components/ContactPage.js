@@ -12,23 +12,51 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 const Box = styled.div`
   background-color: ${props => props.theme.body};
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  z-index: 2;
 `;
 
 const ContactSection = styled.div`
-  width: 100vw;
+  width: 80vw; /* Adjust the width as needed */
+  max-height: 80vh; /* Adjust the max-height as needed */
+  overflow-y: auto;
   padding: calc(2.5rem + 2.5vw) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
+  height: 100%; /* Add this line to enable scrolling */
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 0.8rem; /* Adjust the width as needed */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Hide the track */
+  }
 `;
 
 const Title = styled.h1`
@@ -38,7 +66,7 @@ const Title = styled.h1`
   font-size: calc(1.6rem + 1vw);
   margin-bottom: 3rem;
   position: absolute;
-  right: calc(3rem + 5vw);
+  left: calc(12rem + 5vw);
   top: 6rem;
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 900;
@@ -177,6 +205,7 @@ const ContactPage = (props) => {
   return (
     <ThemeProvider theme={LightTheme}>
       <Box>
+      <Container>
         <LogoComponent theme="light" />
         <SocialIcons theme="light" />
         <PowerButton />
@@ -199,7 +228,7 @@ const ContactPage = (props) => {
               <input type="email" name="email" placeholder="Your email" required />
             </Row>
             <input type="text" name="subject" placeholder="Subject" required />
-            <textarea name="message" placeholder="Your message" cols="30" rows="3" required />
+            <textarea name="message" placeholder="Your message" cols="30" rows="5" required />
             <div style={{ margin: "0 auto" }}>
               <button type="submit">Submit</button>                
               <ToastContainer />
@@ -210,6 +239,7 @@ const ContactPage = (props) => {
           <CustomParticle />
         </ParticleContainer>
         <BigTitle text="CONTACT" top="75%" right="5%" />
+        </Container>
       </Box>
     </ThemeProvider>
   );
