@@ -27,13 +27,12 @@ const Box = styled(motion.div)`
         
     z-index: 1;
     @media (max-width: 768px) {
-        /* Rotate 90 degrees clockwise for screens 768px and below */
-        transform: translate(-50%, -50%) rotate(90deg) scale(0.55); /* Adjust the scale value */
-        width: 105vh; /* Swap width and height for the rotated layout */
+        transform: translate(-50%, -50%) rotate(90deg) scale(0.55); 
+        width: 105vh; 
         height: 65vw;
-        left: 50%; /* Center horizontally after rotation */
-        top: 50%; /* Center vertically after rotation */
-        transform-origin: center center; /* Set the rotation origin to center */
+        left: 50%; 
+        top: 50%; 
+        transform-origin: center center; 
     }
 `;
 
