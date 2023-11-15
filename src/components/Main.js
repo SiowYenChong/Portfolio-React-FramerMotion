@@ -5,7 +5,7 @@ import LogoComponent from '../subComponents/LogoComponent';
 import Sociallcons from '../subComponents/Sociallcons';
 import Intro from './Intro';
 import { Heart } from './AllSvgs';
-
+import { DarkTheme, LightTheme } from './Theme';
 import { motion } from 'framer-motion';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -187,6 +187,12 @@ const RedDiv = styled.div`
     height: ${props => (props.click ? '100%' : '0%')};
     z-index: 1;
     transition: height 0.5s ease, width 1s ease 0.5s;
+    @media (max-width: 768px) {
+        top: ${props => (props.click ? '0' : '50%')};
+        left: 0;
+        width: ${props => (props.click ? '100%' : '0')};
+        height: ${props => (props.click ? '50%' : '0')};
+      }
 `;
 
 
@@ -211,10 +217,15 @@ const Main = () => {
         <Container>
             <PowerButton />
             <LogoComponent theme = { click ? 'dark' : 'light'}/>
-            <Sociallcons theme = { click ? 'dark' : 'light'}/>
+            <Sociallcons theme={click ? (window.innerWidth <= 768 ? 'light' : 'dark') : 'light'} />
             <RedDiv click = {click}/>
                 <Center click = {click}>
-                    <Heart onClick={()=>handleClick()} width={click? 120: 200} height={click? 120: 200} fill='currentColor' />
+                <Heart
+                onClick={() => handleClick()}
+                width={click ? (window.innerWidth <= 768 ? 80 : 120) : 200}
+                height={click ? (window.innerWidth <= 768 ? 80 : 120) : 200}
+                fill='currentColor'
+                />
                     <span>Click the heart </span>
                 </Center>
 
@@ -232,6 +243,16 @@ const Main = () => {
                     whileTap={{ scale: 0.9 }}
                 >
                         <ResumeButton
+                            style={{
+                                color:
+                                click && window.innerWidth <= 768
+                                    ? click ? '#ff8fab' : LightTheme.body
+                                    : LightTheme.text,
+                                backgroundColor:
+                                click && window.innerWidth <= 768
+                                    ? LightTheme.body
+                                    : '#ff8fab',
+                            }}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={openModal}
@@ -260,7 +281,14 @@ const Main = () => {
                         </Modal.Footer>
                     </Modal>
 
-            <Contact href="/contact"
+            <Contact 
+                href="/contact"
+                style={{
+                    color:
+                    click && window.innerWidth <= 768
+                        ? click ? DarkTheme.text : DarkTheme.body
+                        : null,
+                }}
             >
             <motion.h2
                 initial={{
@@ -277,7 +305,15 @@ const Main = () => {
                 Contact me or drop by!
             </motion.h2>
             </Contact>
-            <BLOG href="/blog">
+            <BLOG 
+                href="/blog"
+                style={{
+                    color:
+                    click && window.innerWidth <= 768
+                        ? click ? DarkTheme.text : DarkTheme.body
+                        : null,
+                }}
+            >
                 <motion.h2
                     initial={{
                         y: -200,
@@ -326,7 +362,16 @@ const Main = () => {
                 </motion.h2>
             </WORK>
             <BottomBar>
-                <ABOUT href="/about" click = {click}>
+                <ABOUT 
+                    href="/about" 
+                    click = {click}
+                    style={{
+                        color:
+                        click && window.innerWidth <= 768
+                            ? click ? LightTheme.text : LightTheme.body
+                            : null,
+                    }}
+                >
                     <motion.h2
                         initial={{
                             y: 200,

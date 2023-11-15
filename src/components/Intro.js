@@ -26,6 +26,15 @@ const Box = styled(motion.div)`
         border-right: 2px solid ${props => props.theme.text};
         
     z-index: 1;
+    @media (max-width: 768px) {
+        /* Rotate 90 degrees clockwise for screens 768px and below */
+        transform: translate(-50%, -50%) rotate(90deg) scale(0.55); /* Adjust the scale value */
+        width: 105vh; /* Swap width and height for the rotated layout */
+        height: 65vw;
+        left: 50%; /* Center horizontally after rotation */
+        top: 50%; /* Center vertically after rotation */
+        transform-origin: center center; /* Set the rotation origin to center */
+    }
 `;
 
 
@@ -46,6 +55,20 @@ const SubBox = styled.div`
             height: auto;
         }
     }
+    @media (max-width: 768px) {
+        /* Rotate 90 degrees anticlockwise for screens 768px and below */
+        transform: rotate(-90deg);
+        transform-origin: center center;
+    
+        .pic {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+    }
 `
 
 const Text = styled.div`
@@ -58,17 +81,23 @@ const Text = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
 
-    &>*:last-child{
+    & > *:last-child {
         color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
         font-size: calc(0.5rem + 1.5vw);
         font-weight: 300;
         @media (max-width: 768px) {
-            font-size: calc(0.8rem + 1.5vw);
+            font-size: calc(1.0rem + 1.5vw);
         }
     }
-    
-    
+
+    @media (max-width: 768px) {
+        font-size: calc(2.0rem + 1.5vw);
+        max-width: 100%; 
+        overflow: hidden;
+    }
 `;
+
+
 
 
 const Intro = () => {
