@@ -6,7 +6,7 @@ const Box = styled.div`
   display: flex;
   cursor: pointer;
   position: fixed;
-  left: 15rem; 
+  left: 17rem; 
   top: 3rem;   
   z-index: 10;
 

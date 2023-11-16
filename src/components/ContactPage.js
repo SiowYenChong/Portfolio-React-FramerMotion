@@ -61,17 +61,24 @@ const ContactSection = styled.div`
 
 const Title = styled.h1`
   color: ${props => props.theme.text};
-  width: 50vw;
-  height: 50vh;
   font-size: calc(1.6rem + 1vw);
   margin-bottom: 3rem;
   position: absolute;
-  left: calc(12rem + 5vw);
-  top: 6rem;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 900;
   z-index: 3;
+
+  @media (max-width: 768px) {
+    top: 8%;
+    width: 90%; // Adjust as needed
+    text-align: center;
+    font-size: 2rem; // Adjust as needed
+  }
 `;
+
 
 const Icons = styled.div`
   display: inline-flex;
