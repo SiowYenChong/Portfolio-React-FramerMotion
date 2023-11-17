@@ -33,6 +33,14 @@ export const Blogs = [
         imgSrc:"https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/292201727_2153939041447324_8579913064182737453_n.jpg?stp=dst-jpg_p960x960&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tlEfP0rGOvIAX-k4HSl&_nc_ht=scontent.fkul1-1.fna&oh=00_AfDAM5iuqrLawHS3dJBcXKyJ-OgxBTXWZChEoCfNEK3b1w&oe=65541579",
         link:"https://www.facebook.com/146676765506905/posts/pfbid035DSjHJvQj4iXeahFBYH8VYUmnUmypsT6JmYPRUteVT2h2JLfT2XmvSgju66aWCDJl/?app=fbl"
     },
+    {
+        id:5,
+        name:"Piano Performance - e-Convo with 2021 August Software Engineering graduates",
+        tags:["Piano-Violin Duet","Performance", "IT Society"],
+        date:"26 August, 2021",
+        imgSrc:"https://news.utar.edu.my/news/2021/Aug/26/02/LKC%20FES-24.jpg",
+        link:"https://news.utar.edu.my/news/2021/Aug/26/02/02.html"
+    },
     
   
 ] 
