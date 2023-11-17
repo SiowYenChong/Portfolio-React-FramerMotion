@@ -99,7 +99,7 @@ const Text = styled.div`
 `;
 
 const Intro = () => {
-    const [typingText, isCursorVisible] = useTypingEffect("I'm Siow Yen", 500);
+    const [typingText, isCursorVisible] = useTypingEffect("I'm Siow Yen", 350);
     return (
         <Box
             initial={{ height: 0 }}
