@@ -21,7 +21,7 @@ export const Blogs = [
         id:3,
         name:"Hackathon winning featured in Samsung Newsroom",
         tags:["UI/UX","GalaxyZFold", "GalaxyZFlip","Samsung"],
-        date:"15 June, 2021",
+        date:"15 June, 2023",
         imgSrc:"https://news.utar.edu.my/awards/2023/June/21/01/04.jpg",
         link:"https://news.samsung.com/my/samsung-awards-young-talent-in-developer-day-hackathon-to-reimagine-foldable-experiences-for-malaysians"
     },
