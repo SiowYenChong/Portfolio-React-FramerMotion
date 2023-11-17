@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Me from '../assets/Images/profile-img.jpg'
 import {motion} from 'framer-motion'
+import { useTypingEffect } from '../subComponents/TypingEffect';
+
 
 const Box = styled(motion.div)`
     position: absolute;
@@ -96,10 +98,8 @@ const Text = styled.div`
     }
 `;
 
-
-
-
 const Intro = () => {
+    const [typingText, isCursorVisible] = useTypingEffect("I'm Siow Yen", 500);
     return (
         <Box
             initial={{ height: 0 }}
@@ -109,7 +109,7 @@ const Intro = () => {
             <SubBox>
                 <Text>
                     Hi,
-                    <br /> I'm Siow Yen
+                    <br /> {typingText}
                     <h6>I code and design
                     <br /> websites 
                     <br /> and apps</h6>
