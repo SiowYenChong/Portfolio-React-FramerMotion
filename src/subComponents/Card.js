@@ -76,7 +76,7 @@ const Link = styled(NavLink)`
     background-color: ${props => props.theme.body};
     color: #ff8fab;
     text-decoration: none;
-    padding: 0.5rem calc(1.5rem + 2vw);
+    padding: 0.7rem calc(1.0rem + 1.6vw);
     border-radius: 0 0 0 50px;
     font-size: calc(0.4em + 0.5vw);
     ${Box}:hover &{
