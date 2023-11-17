@@ -8,6 +8,7 @@ import SocialIcons from '../subComponents/Sociallcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitle';
+import HamburgerMenu from '../subComponents/HamburgerMenu';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
@@ -72,6 +73,7 @@ const AboutPage = () => {
                 <LogoComponent theme = 'dark'/>
                 <SocialIcons theme = 'dark'/>
                 <PowerButton/>
+                <HamburgerMenu/>
                 <ParticleComponent theme = 'dark'/>
                 <AmongUs>
                     <img src={audifonos} alt="audifonos" />

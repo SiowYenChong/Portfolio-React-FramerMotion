@@ -8,7 +8,9 @@ import { Heart } from './AllSvgs';
 import { DarkTheme, LightTheme } from './Theme';
 import { motion } from 'framer-motion';
 import { Modal, Button } from 'react-bootstrap';
+import { BrowserRouter as Router, Route } from 'react-router-dom'; //added
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HamburgerMenu from '../subComponents/HamburgerMenu';
 const MainContainer = styled.div`
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   width: 100vw;
@@ -65,13 +67,13 @@ const ResumeText = styled.h2`
 const Contact = styled.a`
   color: ${props => props.theme.text};
   position: absolute;
-  top: 5.8rem;
+  top: 7.8rem;
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
 
   @media (max-width: 768px) {
-    top: 4.6rem;
+    top: 5.8rem;
     right: calc(0.5rem + 2vw);
   }
 `;
@@ -211,24 +213,24 @@ const Main = () => {
     const closeModal = () => {
       setShowModal(false);
     };
+    const isSmallScreen = window.innerWidth <= 768;
 
     return (
         <MainContainer>
         <Container>
             <PowerButton />
             <LogoComponent theme = { click ? 'dark' : 'light'}/>
-            <Sociallcons theme={click ? (window.innerWidth <= 768 ? 'light' : 'dark') : 'light'} />
+            <Sociallcons theme={click ? (isSmallScreen ? 'light' : 'dark') : 'light'} />
             <RedDiv click = {click}/>
                 <Center click = {click}>
                 <Heart
                 onClick={() => handleClick()}
-                width={click ? (window.innerWidth <= 768 ? 80 : 120) : 200}
-                height={click ? (window.innerWidth <= 768 ? 80 : 120) : 200}
+                width={click ? (isSmallScreen <= 768 ? 80 : 120) : 200}
+                height={click ? (isSmallScreen <= 768 ? 80 : 120) : 200}
                 fill='currentColor'
                 />
                     <span>Click the heart </span>
                 </Center>
-
                 <ResumeContainer>
                     <motion.h2
                     initial={{
@@ -245,11 +247,11 @@ const Main = () => {
                         <ResumeButton
                             style={{
                                 color:
-                                click && window.innerWidth <= 768
+                                click && isSmallScreen
                                     ? click ? '#ff8fab' : LightTheme.body
                                     : LightTheme.text,
                                 backgroundColor:
-                                click && window.innerWidth <= 768
+                                click && isSmallScreen
                                     ? LightTheme.body
                                     : '#ff8fab',
                             }}
@@ -280,12 +282,15 @@ const Main = () => {
                         </Button>
                         </Modal.Footer>
                     </Modal>
-
+            {isSmallScreen ? (
+            <HamburgerMenu />
+            ) : (
+            <>
             <Contact 
                 href="/contact"
                 style={{
                     color:
-                    click && window.innerWidth <= 768
+                    click && isSmallScreen
                         ? click ? DarkTheme.text : DarkTheme.body
                         : null,
                 }}
@@ -309,7 +314,7 @@ const Main = () => {
                 href="/blog"
                 style={{
                     color:
-                    click && window.innerWidth <= 768
+                    click && isSmallScreen
                         ? click ? DarkTheme.text : DarkTheme.body
                         : null,
                 }}
@@ -367,7 +372,7 @@ const Main = () => {
                     click = {click}
                     style={{
                         color:
-                        click && window.innerWidth <= 768
+                        click && isSmallScreen
                             ? click ? LightTheme.text : LightTheme.body
                             : null,
                     }}
@@ -404,6 +409,8 @@ const Main = () => {
                     </motion.h2>
                 </SKILLS>
             </BottomBar>
+            </>
+        )}
         </Container>
         {click ? <Intro click = {click}/>: null}
         </MainContainer>

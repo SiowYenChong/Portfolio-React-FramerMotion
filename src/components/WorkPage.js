@@ -10,6 +10,7 @@ import Card from '../subComponents/Card';
 import { Heart } from './AllSvgs';
 import BigTitle from '../subComponents/BigTitle';
 import {motion} from 'framer-motion';
+import HamburgerMenu from '../subComponents/HamburgerMenu';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
@@ -21,14 +22,14 @@ const Box = styled.div`
 `;
 const Main = styled(motion.ul)`
     position: fixed;
-    top: 10rem;
+    top: 15rem;
     left: calc(10rem + 15vw);
     height: 40vh;
     display: flex;
     color: #ff8fab;
     @media (max-width: 768px) {
         position: fixed;
-        top: 13rem;
+        top: 20rem;
     }
 
 `
@@ -74,6 +75,7 @@ const WorkPage = () => {
                 <LogoComponent theme = 'dark'/>
                 <SocialIcons theme = 'dark'/>
                 <PowerButton/>
+                <HamburgerMenu />
                     <Main ref = {ref} variants = {container} initial = 'hidden' animate = 'show'>
                         {
                             Work.map(d =>

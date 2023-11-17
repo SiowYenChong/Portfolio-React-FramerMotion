@@ -11,6 +11,7 @@ import { Github, LinkedIn, Gmail } from '../components/AllSvgs';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import HamburgerMenu from '../subComponents/HamburgerMenu';
 
 const Container = styled.div`
   width: 100%;
@@ -216,6 +217,7 @@ const ContactPage = (props) => {
         <LogoComponent theme="light" />
         <SocialIcons theme="light" />
         <PowerButton />
+        <HamburgerMenu />
         <ContactSection>
           <Title>Get in Touch</Title>
           <Icons>

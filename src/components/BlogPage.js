@@ -12,6 +12,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import BigTitle from '../subComponents/BigTitle';
 import { motion } from 'framer-motion';
+import HamburgerMenu from '../subComponents/HamburgerMenu';
 
 const MainContainer = styled(motion.div)`
     background-image: url(${img});
@@ -79,6 +80,7 @@ const BlogPage = () => {
             <Container>
                 <LogoComponent />
                 <PowerButton />
+                <HamburgerMenu />
                 <SocialIcons />
                 <AnchorComponent numbers={numbers}/>
                     <Center>

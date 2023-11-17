@@ -13,6 +13,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import Button from 'react-bootstrap/Button';
 import CareerModal from '../subComponents/CareerModal';
 import './CareerPage.css';
+import HamburgerMenu from '../subComponents/HamburgerMenu';
 
 const PageContainer = styled.div`
   display: flex;
@@ -70,6 +71,7 @@ const CareerPage = () => {
           <LogoComponent theme="light" />
           <SocialIcons theme="light" />
           <PowerButton />
+          <HamburgerMenu />
           <CenteredHeading></CenteredHeading>
           <VerticalTimeline>
             {Career.map((element) => {

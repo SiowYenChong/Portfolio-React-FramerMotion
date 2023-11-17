@@ -8,6 +8,7 @@ import SocialIcons from '../subComponents/Sociallcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitle';
+import HamburgerMenu from '../subComponents/HamburgerMenu';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
@@ -110,6 +111,7 @@ const MySkillsPage = () => {
                 <LogoComponent theme = 'light'/>
                 <SocialIcons theme = 'light'/>
                 <PowerButton/>
+                <HamburgerMenu/>
                 <ParticleComponent theme = 'light'/>
                 <Main>
                     <Title>
