@@ -218,7 +218,6 @@ const Main = () => {
     return (
         <MainContainer>
         <Container>
-            <PowerButton />
             <LogoComponent theme = { click ? 'dark' : 'light'}/>
             <Sociallcons theme={click ? (isSmallScreen ? 'light' : 'dark') : 'light'} />
             <RedDiv click = {click}/>

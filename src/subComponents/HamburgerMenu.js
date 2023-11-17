@@ -32,7 +32,7 @@ const NavBackground = styled.div`
     border-radius: 50%;
 
     transform: ${(props) => (props.clicked ? 'scale(80)' : 'scale(0)')};
-    transition: transform 2s;
+    transition: transform 1s;
     z-index: 500;
 `;
 
@@ -77,7 +77,7 @@ const Navigation = styled.div`
     width: ${(props) => (props.clicked ? '100%' : '0')};
     opacity: ${(props) => (props.clicked ? '1' : '0')};
 
-    transition: width 0.8s;
+    transition: width 0.8s, opacity 0.8s;
 `;
 
 const List = styled.ul`
