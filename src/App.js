@@ -12,12 +12,21 @@ import ContactPage from './components/ContactPage';
 import CareerPage from './components/CareerPage';
 import { AnimatePresence, motion } from 'framer-motion';
 import SoundBar from './subComponents/SoundBar';
+import {Helmet} from "react-helmet";
 
 function App() {
   const location = useLocation();
 
   return (
     <>
+    <div className="application">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>SiowYenChong</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta name="description" content="Siow Yen Chong" />
+            </Helmet>
+        </div>
       <GlobalStyle />
       <ThemeProvider theme={LightTheme}>
       <SoundBar />
