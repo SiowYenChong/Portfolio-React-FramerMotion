@@ -184,6 +184,9 @@ const Form = styled.form`
     input {
       width: 100%; // Make the inputs full width
     }
+    select{
+      width: 100%; 
+    }
     
     textarea {
       width: 100%; // Make the textarea full width
