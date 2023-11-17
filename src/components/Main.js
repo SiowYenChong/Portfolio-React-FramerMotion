@@ -11,6 +11,9 @@ import { Modal, Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Route } from 'react-router-dom'; //added
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
+import CopyRight from '../subComponents/Copyright';
+
+
 const MainContainer = styled.div`
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   width: 100vw;
@@ -281,6 +284,7 @@ const Main = () => {
                         </Button>
                         </Modal.Footer>
                     </Modal>
+            <CopyRight theme = 'light'/>
             {isSmallScreen ? (
             <HamburgerMenu />
             ) : (

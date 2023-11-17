@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import BigTitle from '../subComponents/BigTitle';
 import { motion } from 'framer-motion';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
+import CopyRight from '../subComponents/Copyright';
 
 const MainContainer = styled(motion.div)`
     background-image: url(${img});
@@ -80,6 +81,7 @@ const BlogPage = () => {
             <Container>
                 <LogoComponent />
                 <PowerButton />
+                <CopyRight />
                 <HamburgerMenu />
                 <SocialIcons />
                 <AnchorComponent numbers={numbers}/>

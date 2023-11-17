@@ -14,6 +14,7 @@ import Button from 'react-bootstrap/Button';
 import CareerModal from '../subComponents/CareerModal';
 import './CareerPage.css';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
+import CopyRight from '../subComponents/Copyright';
 
 const PageContainer = styled.div`
   display: flex;
@@ -71,6 +72,7 @@ const CareerPage = () => {
           <LogoComponent theme="light" />
           <SocialIcons theme="light" />
           <PowerButton />
+          <CopyRight theme = 'light'/>
           <HamburgerMenu />
           <CenteredHeading></CenteredHeading>
           <VerticalTimeline>

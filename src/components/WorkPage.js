@@ -11,6 +11,7 @@ import { Heart } from './AllSvgs';
 import BigTitle from '../subComponents/BigTitle';
 import {motion} from 'framer-motion';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
+import CopyRight from '../subComponents/Copyright';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
@@ -37,7 +38,7 @@ const Rotate = styled.span`
     display: block;
     position: fixed;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 3rem;
     width: 80px;
     height: 80px;
     z-index: 1;
@@ -75,6 +76,7 @@ const WorkPage = () => {
                 <LogoComponent theme = 'dark'/>
                 <SocialIcons theme = 'dark'/>
                 <PowerButton/>
+                <CopyRight theme = 'dark'/>
                 <HamburgerMenu />
                     <Main ref = {ref} variants = {container} initial = 'hidden' animate = 'show'>
                         {
