@@ -23,7 +23,7 @@ const MainContainer = styled.div`
     font-weight: 500;
     font-size: calc(0.5em + 1vw);
     @media (max-width: 768px) {
-        font-size: calc(0.65em + 1vw);
+        font-size: calc(0.8em + 1vw);
     }
   }
 `;
@@ -225,8 +225,8 @@ const Main = () => {
                 <Center click = {click}>
                 <Heart
                 onClick={() => handleClick()}
-                width={click ? (isSmallScreen <= 768 ? 80 : 120) : 200}
-                height={click ? (isSmallScreen <= 768 ? 80 : 120) : 200}
+                width={click ? (isSmallScreen ? 80 : 120) : 200}
+                height={click ? (isSmallScreen ? 80 : 120) : 200}
                 fill='currentColor'
                 />
                     <span>Click the heart </span>

@@ -78,6 +78,9 @@ const Title = styled.h1`
     text-align: center;
     font-size: 2rem; // Adjust as needed
   }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    top: 5%;
+  }
 `;
 
 
