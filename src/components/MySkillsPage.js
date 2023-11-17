@@ -60,7 +60,7 @@ const Main = styled.div`
     }
     @media (min-width: 769px) and (max-width: 1024px) {
         width: 45vw;
-        height: 65vh;
+        height: 69vh;
         margin: 1rem;
     }
 
@@ -112,7 +112,7 @@ const Description = styled.div`
         font-size: 1rem;
     }
     @media (min-width: 769px) and (max-width: 1024px) {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 `
 
