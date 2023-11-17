@@ -31,7 +31,7 @@ const NavBackground = styled.div`
     width: 3rem; 
     border-radius: 50%;
 
-    transform: ${(props) => (props.clicked ? 'scale(80)' : 'scale(0)')};
+    transform: ${(props) => (props.clicked ? 'scale(100)' : 'scale(0)')};
     transition: transform 1s;
     z-index: 500;
 `;
