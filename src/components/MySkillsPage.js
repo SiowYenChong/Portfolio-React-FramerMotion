@@ -26,6 +26,10 @@ const Box = styled.div`
     top: 6.5rem;
     left: calc(0.5rem + 2vw);
   }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    padding: 7rem;
+    flex-direction: row;
+  }
 `;
 
 const Main = styled.div`
@@ -50,9 +54,14 @@ const Main = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         width: 60vw; /* Adjust the width for smaller screens */
-        height: 50vh; /* Adjust the height for smaller screens */
+        height: 50vh;
         margin: 1rem; /* Add margin for spacing between boxes */
 
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 45vw;
+        height: 65vh;
+        margin: 1rem;
     }
 
 `;
@@ -100,7 +109,10 @@ const Description = styled.div`
     }
     @media (max-width: 768px) {
         padding: 0.6rem;
-        font-size: 0.55rem;
+        font-size: 1rem;
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 2rem;
     }
 `
 

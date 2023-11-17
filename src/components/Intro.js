@@ -85,12 +85,12 @@ const Text = styled.div`
         font-size: calc(0.5rem + 1.5vw);
         font-weight: 300;
         @media (max-width: 768px) {
-            font-size: calc(1.0rem + 1.5vw);
+            font-size: calc(2.0rem + 1.5vw);
         }
     }
 
     @media (max-width: 768px) {
-        font-size: calc(2.0rem + 1.5vw);
+        font-size: calc(4.0rem + 1.5vw);
         max-width: 100%; 
         overflow: hidden;
     }

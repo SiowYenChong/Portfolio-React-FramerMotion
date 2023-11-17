@@ -101,7 +101,7 @@ const Icons = styled.div`
 
 const Form = styled.form`
   position: absolute;
-  top: 15rem;
+  top: 17rem;
   z-index: 4;
   display: flex;
   flex-direction: column;
