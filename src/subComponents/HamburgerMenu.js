@@ -92,11 +92,11 @@ const List = styled.ul`
 
 const ItemLink = styled(NavLink)`
     display: inline-block;
-    font-size: 2.0rem; 
+    font-size: 2.5rem; 
     font-weight: 300;
     text-decoration: none;
     color: ${COLORS.primaryLight};
-    padding: 0.5rem 1rem; /* Adjusted from 1rem 2rem */
+    padding: 1rem 2rem; 
     background-image: linear-gradient(
         120deg,
         transparent 0%,
