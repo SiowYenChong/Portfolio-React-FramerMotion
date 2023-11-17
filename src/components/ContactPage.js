@@ -128,6 +128,22 @@ const Form = styled.form`
       margin-right: 2rem;
     }
   }
+  select{
+    padding: 1rem calc(0.5rem + 1vw);
+    margin-bottom: 1rem;
+    background-color: #ffdce4;
+    border: none;
+    border-radius: 4px;
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+      background-color: #ffdce4;
+    }
+    &::placeholder {
+      opacity: 0.8;
+    }
+  }
   textarea {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
@@ -185,6 +201,8 @@ const ParticleContainer = styled.div`
   z-index: 1;
 `;
 
+
+
 const ContactPage = (props) => {
   const formRef = useRef();
 
@@ -239,8 +257,19 @@ const ContactPage = (props) => {
               <input type="text" name="name" placeholder="Your name" required />
               <input type="email" name="email" placeholder="Your email" required />
             </Row>
-            <input type="text" name="subject" placeholder="Subject" required />
-            <textarea name="message" placeholder="Your message" cols="30" rows="5" required />
+
+          <label htmlFor="topics"></label>
+            <select name="subject" id="topics">
+              <option value="" disabled selected>Select a topic</option>
+              <option value="Job Opportunity">Job Opportunity</option>
+              <option value="Collaboration Opportunity">Collaboration Opportunity</option>
+              <option value="Project help">Project/Tutoring help</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Others">Others</option>
+            </select>
+
+            <textarea name="message" placeholder="Your message" cols="30" rows="7" required />
+
             <div style={{ margin: "0 auto" }}>
               <button type="submit">Submit</button>                
               <ToastContainer />
