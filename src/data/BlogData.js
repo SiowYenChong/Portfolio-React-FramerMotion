@@ -1,4 +1,4 @@
-
+import ITSCommitteeImage from "../assets/Images/ITS Committee 21_22.jpg";
 
 export const Blogs = [
     {
@@ -30,7 +30,7 @@ export const Blogs = [
         name:"My serving as UTAR IT Society Chairperson",
         tags:["Leadership","UTAR", "IT Society"],
         date:"9 July, 2022",
-        imgSrc:"https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/292201727_2153939041447324_8579913064182737453_n.jpg?stp=dst-jpg_p960x960&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tlEfP0rGOvIAX-k4HSl&_nc_ht=scontent.fkul1-1.fna&oh=00_AfDAM5iuqrLawHS3dJBcXKyJ-OgxBTXWZChEoCfNEK3b1w&oe=65541579",
+        imgSrc: ITSCommitteeImage,
         link:"https://www.facebook.com/146676765506905/posts/pfbid035DSjHJvQj4iXeahFBYH8VYUmnUmypsT6JmYPRUteVT2h2JLfT2XmvSgju66aWCDJl/?app=fbl"
     },
     {
