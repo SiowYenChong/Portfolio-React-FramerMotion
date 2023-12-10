@@ -81,7 +81,7 @@ const AboutPage = () => {
                     <img src={audifonos} alt="audifonos" />
                 </AmongUs>
                 <Main>
-                    I'm an upcoming Backend Software Engineer. <br /><br />
+                    I'm a Backend Software Engineer. <br /><br />
                     I am a fresh graduate in Software Engineering from UTAR. <br /><br />
                     I'm passionate about building innovative and useful software solutions and continuously learning in the process. <br /><br />
                     As a programming enthusiast, I enjoy tackling challenging problems and leveraging machine learning and reinforcement learning to enhance product and service performance. <br /><br />

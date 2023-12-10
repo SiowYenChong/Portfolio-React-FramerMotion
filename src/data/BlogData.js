@@ -1,4 +1,7 @@
 import ITSCommitteeImage from "../assets/Images/ITS Committee 21_22.jpg";
+import PosterWin from "../assets/Images/PosterWin.jpg";
+import HackathonSamsung from "../assets/Images/HackathonSamsung.jpg";
+import PerformanceDuet from "../assets/Images/performanceduet.jpg";
 
 export const Blogs = [
     {
@@ -14,7 +17,7 @@ export const Blogs = [
         name:"FYP Poster Contest - Champion",
         tags:["Sign Recognition","Tensorflow","OpenCV","Python"],
         date:"19 Sept, 2023",
-        imgSrc:"https://news.utar.edu.my/news/2023/Oct/06/02/16B.jpg",
+        imgSrc: PosterWin,
         link:"https://news.utar.edu.my/news/2023/Oct/06/02/02.html"
     },
     {
@@ -22,7 +25,7 @@ export const Blogs = [
         name:"Hackathon winning featured in Samsung Newsroom",
         tags:["UI/UX","GalaxyZFold", "GalaxyZFlip","Samsung"],
         date:"15 June, 2023",
-        imgSrc:"https://news.utar.edu.my/awards/2023/June/21/01/04.jpg",
+        imgSrc: HackathonSamsung,
         link:"https://news.samsung.com/my/samsung-awards-young-talent-in-developer-day-hackathon-to-reimagine-foldable-experiences-for-malaysians"
     },
     {
@@ -38,7 +41,7 @@ export const Blogs = [
         name:"Piano Performance - e-Convo with 2021 August Software Engineering graduates",
         tags:["Piano-Violin Duet","Performance", "IT Society"],
         date:"26 August, 2021",
-        imgSrc:"https://news.utar.edu.my/news/2021/Aug/26/02/LKC%20FES-24.jpg",
+        imgSrc: PerformanceDuet,
         link:"https://news.utar.edu.my/news/2021/Aug/26/02/02.html"
     },
     
