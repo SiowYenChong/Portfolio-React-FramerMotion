@@ -150,27 +150,23 @@ const MySkillsPage = () => {
                         <Develope width={40} height={40} /> &nbsp;Programming Languages
                     </Title>
                     <Description>
+                    <br></br>
                         <strong>What I know: </strong>
-                            <div className="two-column-list">
-                                <div className="left-column">
+                            <div>
                                     <ul>
                                         <li>Python (Numpy, Scikit, Matplotlib, Pandas, OpenCV)</li>
                                         <li>Java (Object-Oriented)</li>
+                                        <li>C#, ASP.NET Core MVC</li>
                                         <li>C++</li>
                                         <li>PHP</li>
                                         <li>Oracle SQL</li>
                                         <li>MySQL</li>
-                                    </ul>
-                                </div>
-                                <div className="right-column">
-                                    <ul>
                                         <li>ReactJS</li>
                                         <li>Mobile (React Native)</li>
                                         <li>HTML, CSS, PHP, JavaScript</li>
                                         <li>BPEL</li>
                                         <li>WSDL</li>
                                     </ul>
-                                </div>
                             </div>
                     </Description>
                 </Main>

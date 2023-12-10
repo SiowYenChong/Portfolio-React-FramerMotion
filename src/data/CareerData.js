@@ -1,6 +1,15 @@
 export const Career = [
       {
         id: 1,
+        title: "Backend Software Engineer, Fintech & Digitalisation",
+        location: "Public Bank Berhad",
+        description:
+          "Joined as a Trainee Analyst Programmer, specializing in C#, HTML, CSS, JavaScript, jQuery, and ASP.NET CORE MVC, contributing to the enhancement of HR, User-side Recruitment System. Proficient in using SQL Server, SSIS, Visual Studio, Azure DevOps, Entity Framework, LINQ to XML, LINQ to SQL for bug resolution and feature addition.",
+        date: "Nov 2023 - Present",
+        icon: "Work",
+      },
+      {
+        id: 2,
         title: "Software Engineer Intern",
         location: "Finexus Group · Internship",
         description:
@@ -11,7 +20,7 @@ export const Career = [
         link: "https://drive.google.com/uc?export=pdfview&id=1wCup5yCYgPfyTuNuSzBELyNC1ftnZ7OK",
       },
       {
-        id: 2,
+        id: 3,
         title: "Research Assistant",
         location: "Universiti Tunku Abdul Rahman (UTAR) · Full-time",
         description:
@@ -22,7 +31,7 @@ export const Career = [
         link: "https://drive.google.com/uc?export=pdfview&id=1UgRzZvJI2IBj0gPIKWCoC-eCASlRfLi5",
       },
       {
-        id: 3,
+        id: 4,
         title: "Bachelor of Science (Honours), Software Engineering",
         location: "Universiti Tunku Abdul Rahman (UTAR)",
         description: "CGPA: 3.3078 (Second Class: Upper Division), IT Society: Chairperson (Dec 2021 - July 2022), Vice Chairperson (June 2021 - Dec 2021), Active member (2018-Current), Sustainable Development Club: Treasurer (2019-2020), Member (2018-Current)",
@@ -32,7 +41,7 @@ export const Career = [
         link: "https://drive.google.com/uc?export=pdfview&id=1PhS8sTDAU7WMcwOUfyRc6LKRS3GcqjZC",
       },
       {
-        id: 4,
+        id: 5,
         title: "Foundation in Physical Sciences",
         location: "Universiti Tunku Abdul Rahman (UTAR)",
         description: "CGPA: 3.0544, IT Society: Active member (2018-Current), Sustainable Development Club: Treasurer (2019-2020), Chinese Orchestra: Performer (2018-2019)",
@@ -42,7 +51,7 @@ export const Career = [
         link: "https://drive.google.com/uc?export=pdfview&id=1NZh-DVfc75PM4_MsfXneXaxVGDpeSZM8",
       },
       {
-        id: 5,
+        id: 6,
         title: "High School Diploma, Biological and Physical Sciences",
         location: "Sekolah Menengah King George V",
         description: "Grade: 9As (4A+,5A), Prefectorial Board: 2017/2018, 2013/14, Maker's Club: Treasurer, School Choir: 2016, Committee Member Sports Club",
