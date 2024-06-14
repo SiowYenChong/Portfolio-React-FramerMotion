@@ -2,6 +2,7 @@ import ITSCommitteeImage from "../assets/Images/ITS Committee 21_22.jpg";
 import PosterWin from "../assets/Images/PosterWin.jpg";
 import HackathonSamsung from "../assets/Images/HackathonSamsung.jpg";
 import PerformanceDuet from "../assets/Images/performanceduet.jpg";
+import gdg_day from "../assets/Images/gdg_day.jpeg"
 
 export const Blogs = [
     {
@@ -9,7 +10,7 @@ export const Blogs = [
         name:"My Real-time LinkedIn feed",
         tags:["LinkedIn","Connections","Feed"],
         date:"11 Nov, 2023",
-        imgSrc:"https://media.licdn.com/dms/image/C5622AQG1lZJFFYCMRg/feedshare-shrink_800/0/1670138096201?e=1702512000&v=beta&t=wYL3WesKwbVMAUkLcL9mEJIJGuMGfOYDGu8CXi_9pks",
+        imgSrc: gdg_day,
         link:"https://kz.linkedin.com/posts/chong-siow-yen_iwd2023-daretobe-womenintech-activity-7043198909610946561-xmn1"
     },
     {

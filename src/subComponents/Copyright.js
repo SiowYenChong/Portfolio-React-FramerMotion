@@ -15,7 +15,7 @@ const CopyRightContainer = styled.div`
 function CopyRight(props) {
   return (
     <CopyRightContainer color = {props.theme} >
-      © Chong Siow Yen 2023
+      © Chong Siow Yen 2024
     </CopyRightContainer>
   );
 };
