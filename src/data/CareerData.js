@@ -1,7 +1,7 @@
 export const Career = [
       {
         id: 1,
-        title: "Backend Software Engineer, Fintech & Digitalisation",
+        title: "Full-Stack Software Engineer, Fintech & Digitalisation",
         location: "Public Bank Berhad",
         description:
           "Joined as a Trainee Analyst Programmer, specializing in C#, HTML, CSS, JavaScript, jQuery, and ASP.NET CORE MVC, contributing to the enhancement of HR, User-side Recruitment System. Proficient in using SQL Server, SSIS, Visual Studio, Azure DevOps, Entity Framework, LINQ to XML, LINQ to SQL for bug resolution and feature addition.",
