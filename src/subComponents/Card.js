@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { Github } from '../components/AllSvgs'
 import { motion } from 'framer-motion';
 
+//link & github padding adj
 const Box = styled(motion.li)`
     width: 16rem;
     height: 50vh;
