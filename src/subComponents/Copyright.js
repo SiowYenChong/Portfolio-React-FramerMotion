@@ -8,7 +8,7 @@ const CopyRightContainer = styled.div`
   right: 0;
   padding: 1rem;
   font-size: 14px;
-  color: ${props => props.color == 'dark' ? DarkTheme.text : DarkTheme.body};
+  color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
   z-index: 3;
 `;
 

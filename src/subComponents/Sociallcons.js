@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const Line = styled(motion.span)`
   width: 2px;
   height: 8rem;
-  background-color: ${props => props.color == 'dark' ? DarkTheme.text : DarkTheme.body};
+  background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
 `;
 
 const Icons = styled.div`

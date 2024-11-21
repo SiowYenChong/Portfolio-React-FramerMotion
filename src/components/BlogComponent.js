@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-
-
-const Box = styled(motion(NavLink))`
+const Box = styled(motion.create(NavLink))`
     width: calc(10rem + 15vw);
     text-decoration: none;
     height: 20rem;
