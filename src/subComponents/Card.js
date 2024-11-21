@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import { Github } from '../components/AllSvgs'
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 const Box = styled(motion.li)`
     width: 16rem;
@@ -76,7 +76,7 @@ const Link = styled(NavLink)`
     background-color: ${props => props.theme.body};
     color: #ff8fab;
     text-decoration: none;
-    padding: 0.7rem calc(1.0rem + 1.6vw);
+    padding: 0.5rem calc(1.3rem + 0.7vw);
     border-radius: 0 0 0 50px;
     font-size: calc(0.4em + 0.5vw);
     ${Box}:hover &{
