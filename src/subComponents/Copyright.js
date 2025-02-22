@@ -13,11 +13,13 @@ const CopyRightContainer = styled.div`
 `;
 
 function CopyRight(props) {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <CopyRightContainer color = {props.theme} >
-      © Chong Siow Yen 2024
+    <CopyRightContainer color={props.theme}>
+      © Chong Siow Yen {currentYear}
     </CopyRightContainer>
   );
-};
+}
 
 export default CopyRight;
