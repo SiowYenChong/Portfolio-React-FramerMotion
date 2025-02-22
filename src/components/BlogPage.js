@@ -12,6 +12,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import BigTitle from '../subComponents/BigTitle';
 import { motion } from 'framer-motion';
+import ChatBot from '../components/ChatBot';
+
 import HamburgerMenu from '../subComponents/HamburgerMenu';
 import CopyRight from '../subComponents/Copyright';
 
@@ -97,7 +99,9 @@ const BlogPage = () => {
                     </Center>
                     <BigTitle text = 'BLOG' top = '5rem' left = '5rem'/>
             </Container>
+            <ChatBot />
         </MainContainer>
+
     )
 }
 export default BlogPage

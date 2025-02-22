@@ -13,6 +13,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
 import CopyRight from '../subComponents/Copyright';
+import ChatBot from '../components/ChatBot';
 
 const Container = styled.div`
   width: 100%;
@@ -287,6 +288,7 @@ const ContactPage = (props) => {
         <BigTitle text="CONTACT" top="75%" right="5%" />
         </Container>
       </Box>
+      <ChatBot />
     </ThemeProvider>
   );
 };

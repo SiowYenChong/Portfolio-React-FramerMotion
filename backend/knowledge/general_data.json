@@ -1,0 +1,194 @@
+{
+  "personal_info": {
+    "name": "Chong Siow Yen",
+    "mandarin_name": "张晓燕",
+    "location": "Selangor / Kuala Lumpur, Malaysia",
+    "role": "Full-Stack Software Engineer | Cloud-Native Enterprise Solutions | DevOps & .NET",
+    "education": {
+      "institution": "Universiti Tunku Abdul Rahman",
+      "program / speciality": "B.S Software Engineering",
+      "year": "2020–2027"
+    },
+    "bio": "I am passionate about building scalable and secure software systems, blending strong fundamentals in software engineering with practical experience in cloud-native applications, DevOps, and AI integration. My goal is to drive positive impact through robust and innovative enterprise solutions.",
+    "social_media links": {
+      "linkedin": "https://my.linkedin.com/in/chongsiowyen",
+      "github profile": "https://github.com/SiowYenChong",
+      "instagram": "",
+      "credly": ""
+    },
+    "RESUME / CV": {
+      "link": "https://siowyenchong.vercel.app/"
+    }
+  },
+  "skills": {
+    "programming languages": [
+      "C#",
+      "Java",
+      "Python",
+      "JavaScript",
+      "HTML5",
+      "CSS3"
+    ],
+    "ML DL genAI AgenticAI": [
+      "TensorFlow",
+      "PyTorch",
+      "Hugging Face",
+      "Transformers",
+      "RAG pipelines",
+      "Vector Embeddings",
+      "AI Agents"
+    ],
+    "big data": [],
+    "frameworks and libraries": [
+      ".NET Core",
+      ".NET MVC",
+      "Blazor",
+      "MudBlazor",
+      "Spring Boot",
+      "ReactJS",
+      "jQuery"
+    ],
+    "databases": [
+      "Microsoft SQL Server",
+      "Azure SQL",
+      "MySQL",
+      "Oracle SQL"
+    ],
+    "cloud platforms": [
+      "Azure",
+      "AWS",
+      "Google Cloud"
+    ],
+    "operating systems": [
+      "Windows",
+      "Linux"
+    ],
+    "tools": [
+      "Git",
+      "Azure DevOps",
+      "Docker",
+      "SonarQube",
+      "Postman",
+      "SoapUI",
+      "Figma"
+    ]
+  },
+  "services": [
+    {
+      "name": "Full-Stack Development",
+      "description": "Delivering responsive and scalable applications using modern frameworks such as .NET Core, React, and Blazor."
+    },
+    {
+      "name": "Cloud-Native Engineering",
+      "description": "Designing secure, scalable cloud solutions on Azure, AWS, and GCP."
+    },
+    {
+      "name": "AI Integration",
+      "description": "Building intelligent systems with LLMs, vector search, and ML pipelines."
+    },
+    {
+      "name": "Enterprise DevOps",
+      "description": "Implementing CI/CD pipelines and code quality assurance with Azure DevOps, SonarQube, and Docker."
+    },
+    {
+      "name": "Database Engineering",
+      "description": "Crafting optimized database solutions using SQL Server, Oracle, and MySQL."
+    },
+    {
+      "name": "System Integration",
+      "description": "Integrating legacy systems using ESBs (OpenESB), messaging queues, and API services."
+    },
+    {
+      "name": "Automation & Scripting",
+      "description": "Automating tasks with scripting tools, test suites, and workflow builders."
+    }
+  ],
+  "certifications": {
+    "important and relevant certifications": [
+      {
+        "name": "Microsoft Certified Azure AI Fundamentals (AI-900)",
+        "provider": "Microsoft",
+        "date": "2024",
+        "link": ""
+      },
+      {
+        "name": "NVIDIA Certified - Rapid Application Development with LLMs",
+        "provider": "NVIDIA",
+        "date": "2024",
+        "link": ""
+      },
+      {
+        "name": "NVIDIA Certified - Building LLM Apps with Prompt Engineering",
+        "provider": "NVIDIA",
+        "date": "2024",
+        "link": ""
+      },
+      {
+        "name": "Malaysia Board of Technologists - Graduate Technologist",
+        "provider": "MBOT",
+        "date": "2024",
+        "link": ""
+      }
+    ],
+    "simple certifications": [
+      {
+        "name": "Alibaba Global Digital Talent Certification",
+        "provider": "Alibaba",
+        "date": "2023",
+        "link": ""
+      },
+      {
+        "name": "AICB Affiliate - Introduction to Ethics in Banking",
+        "provider": "Asian Institute of Chartered Bankers",
+        "date": "2023",
+        "link": ""
+      }
+    ]
+  },
+  "portfolio_routes": {
+    "home": {
+      "path": "/",
+      "description": "Main landing page with interactive intro and overview."
+    },
+    "about": {
+      "path": "/about",
+      "description": "More about me: background, philosophy, and skills."
+    },
+    "blog": {
+      "path": "/blog",
+      "description": "A collection of blog posts and written thoughts."
+    },
+    "career": {
+      "path": "/career",
+      "description": "Professional experiences and career highlights."
+    },
+    "work": {
+      "path": "/work",
+      "description": "Selected personal and team-based projects."
+    },
+    "skills": {
+      "path": "/skills",
+      "description": "Technical skills and development toolkit overview."
+    },
+    "contact": {
+      "path": "/contact",
+      "description": "Ways to get in touch, message form, and details."
+    }
+  },
+  "contact_methods": {
+    "email": {
+      "primary": "clairechong998@gmail.com",
+      "response": "You can reach me directly via email at clairechong998@gmail.com"
+    },
+    "contact_form": {
+      "location": "/contact",
+      "response": "You can use the contact form on my portfolio at /contact to send me a message"
+    }
+  },
+  "frequently_asked_questions": [
+    {
+      "question": "what is the used technologies in this portfolio ?",
+      "answer": "The UI of this portfolio was created using ReactJS, framer-motion and Tailwind CSS. The backend is powered by FastAPI and CrewAI for creating the agentic system workflow. For more details check the repositories: UI - https://github.com/SiowYenChong, Backend - (repo pending publication)."
+    }
+  ]
+}

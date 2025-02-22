@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Me from '../assets/Images/profile-img.jpg'
-import {motion} from 'framer-motion'
+import { motion} from 'framer-motion';
 import { useTypingEffect } from '../subComponents/TypingEffect';
 
 
@@ -116,13 +116,15 @@ const Intro = () => {
                 </Text>
             </SubBox>
             <SubBox>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 2 }}
-                >
-                    <img className = "pic" src={Me} alt="Profile Pic" />
-                </motion.div>
+            <motion.img
+                className="pic"
+                src={Me}
+                alt="Profile Pic"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 2 }}
+            />
+
             </SubBox>
         </Box>
     )

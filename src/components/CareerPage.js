@@ -15,6 +15,7 @@ import CareerModal from '../subComponents/CareerModal';
 import './CareerPage.css';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
 import CopyRight from '../subComponents/Copyright';
+import ChatBot from '../components/ChatBot';
 
 const PageContainer = styled.div`
   display: flex;
@@ -109,6 +110,7 @@ const CareerPage = () => {
         </ContentContainer>
       </PageContainer>
       <CareerModal show={modalShow} onHide={handleModalHide} title={modalContent.title} content={modalContent.content} />
+      <ChatBot />
     </ThemeProvider>
   );
 };

@@ -1,4 +1,6 @@
-export const PowerBtn = (props) => {
+import React from 'react';
+
+  export const PowerBtn = (props) => {
     return (
       <svg
         aria-hidden="true"
@@ -16,7 +18,7 @@ export const PowerBtn = (props) => {
       </svg>
     )
   }
-  
+
   export const LinkedIn = (props) => {
       return(
         <svg

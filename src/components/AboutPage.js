@@ -11,6 +11,7 @@ import BigTitle from '../subComponents/BigTitle';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
 import CopyRight
  from '../subComponents/Copyright';
+import ChatBot from '../components/ChatBot';
 const Box = styled.div`
     background-color: ${props => props.theme.body};
     width: 100vw;
@@ -89,6 +90,7 @@ const AboutPage = () => {
                 </Main>
                 <BigTitle text = 'ABOUT' top = '10%' left = '5%'/>
             </Box>
+            <ChatBot />
         </ThemeProvider>
     );
 };

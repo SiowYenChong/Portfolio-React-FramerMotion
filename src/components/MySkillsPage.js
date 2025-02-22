@@ -10,6 +10,7 @@ import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitle';
 import HamburgerMenu from '../subComponents/HamburgerMenu';
 import CopyRight from '../subComponents/Copyright';
+import ChatBot from '../components/ChatBot';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
@@ -172,6 +173,7 @@ const MySkillsPage = () => {
                 </Main>
                 <BigTitle text = 'SKILLS' top = '75%' right = '30%'/>
             </Box>
+            <ChatBot />
         </ThemeProvider>
     );
 };
