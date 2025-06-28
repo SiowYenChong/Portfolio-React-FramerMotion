@@ -1,8 +1,7 @@
-//updated
 import React, { useState, useEffect, useRef } from 'react';
 import { IoMdClose, IoMdInformationCircle } from 'react-icons/io';
 import { RiRobot3Fill } from 'react-icons/ri';
-import { LuSendHorizontal, LuMessageCircle } from 'react-icons/lu';
+import { LuSendHorizonal, LuMessageCircle } from 'react-icons/lu';
 import { motion, AnimatePresence } from 'framer-motion';
 import { VscDebugBreakpointConditionalUnverified } from 'react-icons/vsc';
 import TextWithLinks from '../subComponents/TextWithLinks'; // Adjust path if needed
@@ -42,7 +41,7 @@ const ChatBot = () => {
     setMessages(prev => [...prev, { text: input, isBot: false }]);
 
     try {
-      const response = await axios.post('http://localhost:8000/chat', { question: input }, { withCredentials: true });
+      const response = await axios.post('https://portfolio-react-framermotion.onrender.com/chat', { question: input }, { withCredentials: true });
 
       setMessages(prev => [
         ...prev,
@@ -181,7 +180,7 @@ const ChatBot = () => {
                 placeholder="Type your message..."
               />
               <button onClick={chatRequest} disabled={!input.trim() || isSending}>
-                <LuSendHorizontal />
+                <LuSendHorizonal />
               </button>
             </div>
           </motion.div>
