@@ -1,7 +1,8 @@
+//test
 import React, { useState, useEffect, useRef } from 'react';
 import { IoMdClose, IoMdInformationCircle } from 'react-icons/io';
 import { RiRobot3Fill } from 'react-icons/ri';
-import { LuSendHorizonal, LuMessageCircle } from 'react-icons/lu';
+import { LuSendHorizontal, LuMessageCircle } from 'react-icons/lu';
 import { motion, AnimatePresence } from 'framer-motion';
 import { VscDebugBreakpointConditionalUnverified } from 'react-icons/vsc';
 import TextWithLinks from '../subComponents/TextWithLinks'; // Adjust path if needed
@@ -180,7 +181,7 @@ const ChatBot = () => {
                 placeholder="Type your message..."
               />
               <button onClick={chatRequest} disabled={!input.trim() || isSending}>
-                <LuSendHorizonal />
+                <LuSendHorizontal />
               </button>
             </div>
           </motion.div>
