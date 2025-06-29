@@ -251,7 +251,7 @@ const ContactPage = (props) => {
             <a href="https://github.com/SiowYenChong" target="_blank">
               <Github width={50} height={50} fill="black" />
             </a>
-            <a href="https://www.linkedin.com/in/chong-siow-yen" target="_blank">
+            <a href="https://www.linkedin.com/in/chongsiowyen" target="_blank">
               <LinkedIn width={50} height={50} fill="black" />
             </a>
             <a href="mailto:Clairechong998@gmail.com" target="_blank">
